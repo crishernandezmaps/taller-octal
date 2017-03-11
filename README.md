@@ -55,7 +55,7 @@ Este taller esta dirigido a toda persona que desea participar de un taller intro
 
 a. Profesionales, estudiantes **sin** conocimientos de programación. Este curso si bien no es curso de programación, es posible comprender cómo se programa una aplicación y visualización.
 
-b. Profesionales, estudiantes **con** conocimientos de programación. En este caso, aquellos profesionales que ya tengan un nivel intermedio o avanzado de programación podrán descrubrir cómo se llevan procesos de investigación con datos de forma abierta y colaborativa, en conjunto con el público en general.
+b. Profesionales, estudiantes **con** conocimientos de programación. En este caso, aquellos profesionales que ya tengan un nivel intermedio o avanzado de programación podrán descrubrir cómo se llevan a cabo procesos de investigación con datos de forma abierta y colaborativa, en conjunto con el público en general.
 
 ## 4. Qué aprenderás en el Taller
 - **Ciencia de Datos Ciudadanos**: corriente que mezcla metodologías cuantitativas y cualitativas de ciencia social para el desarrollo de proyectos científicos.
