@@ -42,7 +42,12 @@ Visualizar datos requeriría un taller completo. Sin embargo utilzaremos para vi
 
 Por ahora solo basta que conozcas que existe la plataforma. Si quieres probarla antes de asistir al taller, mejor aún.
 
-#### 2.1.3. GithubPages & Google Drive
+#### 2.1.3. Carto
+Si como resultado del análisis de cada grupo se escoge un mapa como visualización principal, o como parte del contenido creado, se utilizará el servicio gratuito **CARTO** ([link](https://carto.com/)).
+
+Se recomienda crear una cuenta previamente a la asistencia al taller. De todas formas el proceso es muy sencillo y rápido. Basta utilizar una cuenta de GMAIL para crear una cuenta.
+
+#### 2.1.4. GithubPages & Google Drive
 Utilizaremos otra virtud de Github, que es la capacidad que posee pra alojar contenido HTML estático, a través de la utilización de **Jekyll**. Los artículos escritos en este taller serán escritos en el procesador de texto provisto en **Google Drive**, sin embargo luego serán convertidos al formato **Markdown**, y serán dispuestos en el Blog que será el resultado de éste Taller. Desde ese Blog podrás ver el resultado de tu trabajo, el de tus compañeros(as), y presumir de aquello.
 
 No te preocupes, en Octal nos encargaremos de hacer el proceso de conversión y subir tu contenido al Blog. Por ahora basta que conozcas cómo utilizaremos éstas herramientas. Más, es necesario que poseas una cuenta en **GMAIL**, con la cual acceder a Drive.
