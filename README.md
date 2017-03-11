@@ -10,7 +10,7 @@ Además, Octal es parte de las iniciativas de Ciudadanía Digital de la fundaci�
 Octal tiene como objetivo crear una experiencia de juego para niños y jóvenes en edad escolar al interior de sus escuelas, en la cual se les invita a mirar los cielos de su ciudad buscando y midiendo cuántas estrellas pueden observar. Dichas observaciones serán compartidas a través de Internet con otros grupos de niños y jóvenes alrededor del mundo, con el fin de demostrar los distintos niveles de polución lumínica, generando conciencia y posibles soluciones al respecto.
 
 ### 1.2. Sobre el Taller
-El taller Octal busca crear una instancia real de Ciencia de Datos Ciudadanos. En dicha experiencopia a través del trabajo colaborativo, se identificará una problemática de importancia para el grupo, se escogerá un método y herramientas; se recopilarán datos a través de métodos de programación; se hará un procesamiento de bases de datos; y finalmente se visualizarán dichos datos, creando además un post del Blog que se montará para la experiencia, el cual será dispuesto en Internet para su acceso libre.
+El taller Octal busca crear una instancia real de Ciencia de Datos Ciudadanos. En dicha experiencia a través del trabajo colaborativo se identificará la problemática a tratar, se escogerá un método y herramientas; se recopilarán datos a través de métodos de programación; se hará un procesamiento de bases de datos; y finalmente se visualizarán dichos datos, creando además un post del Blog que se montará para la experiencia, el cual será dispuesto en Internet para su acceso libre, como resultado del Taller.
 
 El taller Octal cubrirá desde la pregunta de investigación realizada al interior de los mismos grupos, hasta la entrega de resultados al público en general.
 
@@ -37,6 +37,16 @@ https://github.com/crishernandezmaps/taller-octal
 
 No es necesario tener conociemientos previos en la utilización de **GIT** (sistema de versionado de código). El código será extraído directamente desde git sin necesidad de 'clonar' el directorio, ya que github provee la posibilidad de descargar el contenido en formato **Zip**, por lo que el contenido será descargado directamente desde al ordenador de la (del) asistente.
 
+#### 2.1.2. RawGraphs
+Visualizar datos requeriría un taller completo. Sin embargo utilzaremos para visualizar nuestros resultados una muy buena herramienta desarrollada por el Politénico di Milano llamada RAWGraphs ([link](http://rawgraphs.io/)). Una vez que nuestros datos estén procesados, podremos subirlos a RawGraphs y escoger la mejor forma de visualizarlos.
+
+Por ahora solo basta que conozcas que existe la plataforma. Si quieres probarla antes de asistir al taller, mejor aún.
+
+#### 2.1.3. GithubPages & Google Drive
+Utilizaremos otra virtud de Github, que es la capacidad que posee pra alojar contenido HTML estático, a través de la utilización de **Jekyll**. Los artículos escritos en este taller serán escritos en el procesador de texto provisto en **Google Drive**, sin embargo luego serán convertidos al formato **Markdown**, y serán dispuestos en el Blog que será el resultado de éste Taller. Desde ese Blog podrás ver el resultado de tu trabajo, el de tus compañeros(as), y presumir de aquello.
+
+No te preocupes, en Octal nos encargaremos de hacer el proceso de conversión y subir tu contenido al Blog. Por ahora basta que conozcas cómo utilizaremos éstas herramientas. Más, es necesario que poseas una cuenta en **GMAIL**, con la cual acceder a Drive.
+
 ### 2.2. Hardware
 Necesitas un laptop para éste taller. Bastaría cualquier laptop con no menos de 5 años de antigüedad. Es posible que funcione todo OK en un laptop más antiguo, eventualmente. Aunque no podriamos asegurarlo... **;)**
 
@@ -49,7 +59,7 @@ b. Profesionales, estudiantes **con** conocimientos de programación. En este ca
 
 ## 4. Qué aprenderás en el Taller
 - **Ciencia de Datos Ciudadanos**: corriente que mezcla metodologías cuantitativas y cualitativas de ciencia social para el desarrollo de proyectos científicos.
-- **Ciencia de Datos**: a nivel básico e introductorio, pero podrás reconocer cómo se aplican técnicas de recolección de datos para fines diversos. Además de limpiar datos y transformarlos a diversos formatos.
+- **Ciencia de Datos**: a nivel básico e introductorio, pero podrás reconocer cómo se aplican técnicas de recolección de datos para fines diversos.
 - **Programación**: a un nivel básico e introductorio, pero podrás al final del taller (copiando y pegando código), crear tu propia aplicación y/o visualización de datos.
 - **Visualización de Datos**: a nivel básico e introductorio, podrás conocer cómo visualizar tus datos en plataformas abiertas y disponibles en la web.
 
@@ -64,7 +74,19 @@ Los cupos son limitados. Ojo.
 ## 6. Sobre el facilitador del Taller
 **Cristian Hernández**: Geógrafo Universidad de Chile especializado en análisis de datos y visualización, con énfasis en datos espaciales y lenguaje natural. Lidera y participa en proyectos en Latinoamérica y Europa relacionados con Citizen Science, Semantic Web y Data Journalism. Su visita en Chile y busca explorar redes de colaboración para el proyecto Liqen-Octal, que a su ves es parte de la iniciativa europea Stars4All, que busca proteger la oscuridad de los cielos nocturnos, previniendo la polución lumínica y favoreciendo la libre observación del cielo.
 
-## 7. Octal es un proyecto auspiciado por:
+## 7. Programa
+Se entregará una guía con los detalles específicos a los participantes, pero en un principio el programa es el que sigue:
+
++ 10:00 - 10:10: Inicio y Bienvenida.
++ 10:10 - 10:30: Presentación Proyectos Ciencia Ciudadana de Datos (Cristian Hernández).
++ 10:30 - 11:30: Preparación de las Herramientas trabajo práctico.
++ 11:30 - 11:45: Creación de Grupos de trabajo.
++ 12:00 - 12:15: Escoger Método y Roles en el Equipo.
++ 12:15 - 13:00: Aplicación del Instrumento.
++ 13:00 - 13:30: Interpretación Resultados y escritura del Artículo.
++ 13:30 - 14:00: *Carrousel* de resultados y finalización.
+
+## 8. Octal es un proyecto auspiciado por:
 <div style="text-align: center;">
 <img src="https://europa.eu/european-union/sites/europaeu/files/docs/body/flag_yellow_low.jpg" height="150" width="200">
 <img src="http://www.sky-live.tv/logos/stars4all-1.png" height="180" width="180">
