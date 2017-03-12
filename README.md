@@ -16,7 +16,7 @@ El taller Octal cubrirá desde la pregunta de investigación realizada al interi
 
 ## 2. Requisitos
 
-### 2.1. Software
+### 2.1. Software y Plataformas
 
 #### 2.1.1. Node.js
 Para este taller trabajaremos usando el ambiente de programación **Node.js**, basado en Javascript y que permite trabajar desde el lado del servidor para la creación de aplicaciones.
@@ -30,30 +30,30 @@ Una de las ventajas de Node.js y que se base en Javascript, es que el mismo leng
 
 > Las dudas de la instalación serán resueltas también el día del taller.
 
-#### 2.1.2. Github
-Todos los recursos necesarios en términos de textos y código están disponibles en el siguiente repositorio:
+### 2.1.2. Editor de Texto
+El editor de texto te permitirá leer y editar el código si es necesario. Te recomendamos encarecidamente que instales alguno de tu preferencia antes del talle. Algunas opciones son:
 
-https://github.com/crishernandezmaps/taller-octal
+- [Notepad++](https://notepad-plus-plus.org/download/v7.3.3.html)
+- [Sublime](https://sublimetext.com/3)
+- [Atom](https://atom.io)
 
-No es necesario tener conociemientos previos en la utilización de **GIT** (sistema de versionado de código). El código será extraído directamente desde git sin necesidad de 'clonar' el directorio, ya que github provee la posibilidad de descargar el contenido en formato **Zip**, por lo que el contenido será descargado directamente desde al ordenador de la (del) asistente.
-
-#### 2.1.2. RawGraphs
-Visualizar datos requeriría un taller completo. Sin embargo utilzaremos para visualizar nuestros resultados una muy buena herramienta desarrollada por el Politénico di Milano llamada RAWGraphs ([link](http://rawgraphs.io/)). Una vez que nuestros datos estén procesados, podremos subirlos a RawGraphs y escoger la mejor forma de visualizarlos.
-
-Por ahora solo basta que conozcas que existe la plataforma. Si quieres probarla antes de asistir al taller, mejor aún.
+Cualquiera de las opciones es suficiente para este Taller.
 
 #### 2.1.3. Carto
-Si como resultado del análisis de cada grupo se escoge un mapa como visualización principal, o como parte del contenido creado, se utilizará el servicio gratuito **CARTO** ([link](https://carto.com/)).
+Si como resultado del análisis de cada grupo se escoge un mapa como visualización principal, o como parte del contenido creado, se utilizará el servicio gratuito **CARTO** ([link](https://carto.com/)). **Se recomienda crear una cuenta previamente a la asistencia al taller**. De todas formas el proceso es muy sencillo y rápido. Basta utilizar una cuenta de GMAIL para crear una cuenta.
 
-Se recomienda crear una cuenta previamente a la asistencia al taller. De todas formas el proceso es muy sencillo y rápido. Basta utilizar una cuenta de GMAIL para crear una cuenta.
-
-#### 2.1.4. GithubPages & Google Drive
-Utilizaremos otra virtud de Github, que es la capacidad que posee pra alojar contenido HTML estático, a través de la utilización de **Jekyll**. Los artículos escritos en este taller serán escritos en el procesador de texto provisto en **Google Drive**, sin embargo luego serán convertidos al formato **Markdown**, y serán dispuestos en el Blog que será el resultado de éste Taller. Desde ese Blog podrás ver el resultado de tu trabajo, el de tus compañeros(as), y presumir de aquello.
-
-No te preocupes, en Octal nos encargaremos de hacer el proceso de conversión y subir tu contenido al Blog. Por ahora basta que conozcas cómo utilizaremos éstas herramientas. Más, es necesario que poseas una cuenta en **GMAIL**, con la cual acceder a Drive.
+#### 2.1.4. Google Drive
+Es necesario que poseas una cuenta en **GMAIL**, con la cual acceder a Drive. Escribiremos texto y posiblemente utilizaremos Google Spreadsheets para el ejercicio.
 
 ### 2.2. Hardware
 Necesitas un laptop para éste taller. Bastaría cualquier laptop con no menos de 5 años de antigüedad. Es posible que funcione todo OK en un laptop más antiguo, eventualmente. Aunque no podriamos asegurarlo... **;)**
+
+### 2.3. Resumen de requerimientos para el taller:
+- Laptop
+- Node.js
+- Editor de texto
+- Cuenta en CARTO
+- Cuenta en Google Drive
 
 ## 3. A quién está dirigido
 Este taller esta dirigido a toda persona que desea participar de un taller introductorio al trabajo de ciencia ciudadana de datos. Dos tipos de perfil son los necesarios para éste taller:
@@ -64,7 +64,7 @@ b. Profesionales, estudiantes **con** conocimientos de programación. En este ca
 
 ## 4. Qué aprenderás en el Taller
 - **Ciencia de Datos Ciudadanos**: corriente que mezcla metodologías cuantitativas y cualitativas de ciencia social para el desarrollo de proyectos científicos.
-- **Ciencia de Datos**: a nivel básico e introductorio, pero podrás reconocer cómo se aplican técnicas de recolección de datos para fines diversos.
+- **Ciencia de Datos**: a nivel básico e introductorio, pero podrás reconocer cómo se aplican técnicas de recolección y análisis de datos para fines diversos.
 - **Programación**: a un nivel básico e introductorio, pero podrás al final del taller (copiando y pegando código), crear tu propia aplicación y/o visualización de datos.
 - **Visualización de Datos**: a nivel básico e introductorio, podrás conocer cómo visualizar tus datos en plataformas abiertas y disponibles en la web.
 
