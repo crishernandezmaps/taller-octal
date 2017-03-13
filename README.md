@@ -77,7 +77,7 @@ Dos talleres serán realizados en Chile a principios del mes de Abril:
 Los cupos son limitados. Ojo.
 
 ## 6. Sobre el facilitador del Taller
-[**Cristian Hernández**](http://crishernandez.co/): Geógrafo Universidad de Chile especializado en análisis de datos y visualización, con énfasis en datos espaciales y lenguaje natural. Lidera y participa en proyectos en Latinoamérica y Europa relacionados con Citizen Science, Semantic Web y Data Journalism. Su visita en Chile y busca explorar redes de colaboración para el proyecto Liqen-Octal, que a su vez es parte de la iniciativa europea Stars4All, que busca proteger la oscuridad de los cielos nocturnos, previniendo la polución lumínica y favoreciendo la libre observación del cielo.
+[**Cristian Hernández**](http://crishernandez.co/): Geógrafo Universidad de Chile especializado en análisis de datos y visualización, con énfasis en datos espaciales y lenguaje natural. Lidera y participa en proyectos en Latinoamérica y Europa relacionados con Citizen Science, Semantic Web y Data Journalism. Su visita en Chile y busca explorar redes de colaboración para el proyecto Liqen-Octal, miembro de la iniciativa europea [Stars4All](http://stars4all.eu/), que busca proteger la oscuridad de los cielos nocturnos previniendo la polución lumínica y favoreciendo la libre observación del cielo.
 
 ## 7. Programa
 Se entregará una guía con los detalles específicos a los participantes, pero en un principio el programa es el que sigue:
@@ -93,9 +93,9 @@ Se entregará una guía con los detalles específicos a los participantes, pero 
 
 ## 8. Octal es un proyecto auspiciado por:
 <div style="text-align: center;">
-<img src="https://europa.eu/european-union/sites/europaeu/files/docs/body/flag_yellow_low.jpg" height="150" width="200">
-<img src="http://www.sky-live.tv/logos/stars4all-1.png" height="180" width="180">
-<img src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAZAAAAAJDAxYmYwZGNiLWMzYjMtNGE2Mi1iNDJlLWVmMzZmZGYzOTYxMw.png" height="150" width="150">
+<img src="http://stars4all.eu/wp-content/uploads/2016/12/EU_footer.png" height="70" width="220">
+<img src="http://linkeddata4.dia.fi.upm.es/wordpress-new/wp-content/uploads/2016/12/logo_dark.png" height="100" width="200">
+<img src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAZAAAAAJDAxYmYwZGNiLWMzYjMtNGE2Mi1iNDJlLWVmMzZmZGYzOTYxMw.png" height="100" width="100">
 </div>
 
 ---
