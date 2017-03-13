@@ -98,6 +98,9 @@ Se entregará una guía con los detalles específicos a los participantes, pero 
 <img src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAZAAAAAJDAxYmYwZGNiLWMzYjMtNGE2Mi1iNDJlLWVmMzZmZGYzOTYxMw.png" height="80" width="80">
 </div>
 
+##### Disclaimer
+“This "paper/ presentation" is part of the Stars4ALL project that has received funding from the European Union’s Horizon 2020  under grant agreement No 688135"
+
 ---
 ##### Contacto:
 Cristian Hernández Milla: <br>
