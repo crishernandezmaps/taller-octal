@@ -71,13 +71,13 @@ b. Profesionales, estudiantes **con** conocimientos de programación. En este ca
 ## 5. Fechas y Lugares
 Dos talleres serán realizados en Chile a principios del mes de Abril:
 
-- **1 de Abril, 2017**: Facultad de Arquitectura y Urbanismo, Universidad de Chile. Desde las 10:00 a las 14:00 horas.
-- **8 de Abril, 2017**: FabLab UC. Centro de Innovación UC Anacleto Angelini. Desde las 10:00 a las 14:00 horas.
+- **1 de Abril, 2017**: Facultad de Arquitectura y Urbanismo, Universidad de Chile. Desde las 10:00 a las 15:00 horas.
+- **8 de Abril, 2017**: FabLab UC. Centro de Innovación UC Anacleto Angelini. Desde las 10:00 a las 15:00 horas.
 
 Los cupos son limitados. Ojo.
 
 ## 6. Sobre el facilitador del Taller
-**Cristian Hernández**: Geógrafo Universidad de Chile especializado en análisis de datos y visualización, con énfasis en datos espaciales y lenguaje natural. Lidera y participa en proyectos en Latinoamérica y Europa relacionados con Citizen Science, Semantic Web y Data Journalism. Su visita en Chile y busca explorar redes de colaboración para el proyecto Liqen-Octal, que a su ves es parte de la iniciativa europea Stars4All, que busca proteger la oscuridad de los cielos nocturnos, previniendo la polución lumínica y favoreciendo la libre observación del cielo.
+[**Cristian Hernández**](http://crishernandez.co/): Geógrafo Universidad de Chile especializado en análisis de datos y visualización, con énfasis en datos espaciales y lenguaje natural. Lidera y participa en proyectos en Latinoamérica y Europa relacionados con Citizen Science, Semantic Web y Data Journalism. Su visita en Chile y busca explorar redes de colaboración para el proyecto Liqen-Octal, que a su vez es parte de la iniciativa europea Stars4All, que busca proteger la oscuridad de los cielos nocturnos, previniendo la polución lumínica y favoreciendo la libre observación del cielo.
 
 ## 7. Programa
 Se entregará una guía con los detalles específicos a los participantes, pero en un principio el programa es el que sigue:
@@ -87,9 +87,9 @@ Se entregará una guía con los detalles específicos a los participantes, pero 
 + 10:30 - 11:30: Preparación de las Herramientas trabajo práctico.
 + 11:30 - 11:45: Creación de Grupos de trabajo.
 + 12:00 - 12:15: Escoger Método y Roles en el Equipo.
-+ 12:15 - 13:00: Aplicación del Instrumento.
-+ 13:00 - 13:30: Interpretación Resultados y escritura del Artículo.
-+ 13:30 - 14:00: *Carrousel* de resultados y finalización.
++ 12:15 - 13:40: Aplicación del Instrumento y Visualización.
++ 13:40 - 14:15: Interpretación Resultados y escritura del Artículo.
++ 14:15 - 15:00: *Carrousel* de resultados y finalización.
 
 ## 8. Octal es un proyecto auspiciado por:
 <div style="text-align: center;">
