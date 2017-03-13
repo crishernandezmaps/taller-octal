@@ -92,10 +92,10 @@ Se entregará una guía con los detalles específicos a los participantes, pero 
 + 14:15 - 15:00: *Carrousel* de resultados y finalización.
 
 ## 8. Octal es un proyecto auspiciado por:
-<div style="text-align: center;">
+<div style="text-align: center;background:#1D62F0;padding:10px;">
 <img src="http://stars4all.eu/wp-content/uploads/2016/12/EU_footer.png" height="70" width="220">
-<img src="http://linkeddata4.dia.fi.upm.es/wordpress-new/wp-content/uploads/2016/12/logo_dark.png" height="100" width="200">
-<img src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAZAAAAAJDAxYmYwZGNiLWMzYjMtNGE2Mi1iNDJlLWVmMzZmZGYzOTYxMw.png" height="100" width="100">
+<img src="http://linkeddata4.dia.fi.upm.es/wordpress-new/wp-content/uploads/2016/12/logo_dark.png" height="80" width="180">
+<img src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAZAAAAAJDAxYmYwZGNiLWMzYjMtNGE2Mi1iNDJlLWVmMzZmZGYzOTYxMw.png" height="80" width="80">
 </div>
 
 ---
