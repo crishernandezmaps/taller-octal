@@ -24,9 +24,7 @@ Para este taller trabajaremos usando el ambiente de programación **Node.js**, b
 Una de las ventajas de Node.js y que se base en Javascript, es que el mismo lenguage de programación podemos utilizarlo para configurar un servidor, crear una aplicación web y al mismo tiempo desarrollar visualizaciones.
 
 > Instalar Node.js
-- Para instalarlo en Windows puedes dirigirte [aquí](#).
-- Para instalarlo en Mac puedes dirigirte [aquí](#).
-- Para instalarlo en Linux puedes dirigirte [aquí](#).
+- Para instalarlo en Windows puedes dirigirte [aquí](https://nodejs.org/en/download/).
 
 > Las dudas de la instalación serán resueltas también el día del taller.
 
