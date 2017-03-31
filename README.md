@@ -46,7 +46,7 @@ Si como resultado del análisis de cada grupo se escoge un mapa como visualizaci
 Es necesario que poseas una cuenta en **GMAIL**, con la cual acceder a Drive. Escribiremos texto y posiblemente utilizaremos Google Spreadsheets para el ejercicio.
 
 ### 2.2. Hardware
-Necesitas un laptop para éste taller. Bastaría cualquier laptop con no menos de 5 años de antigüedad. Es posible que funcione todo OK en un laptop más antiguo, eventualmente. Aunque no podriamos asegurarlo... **;)**
+Necesitas un laptop para éste taller. Bastaría cualquier laptop con **NO MÁS** de 5 años de antigüedad. Es posible que funcione todo OK en un laptop más antiguo, eventualmente. Aunque no podriamos asegurarlo... **;)**
 
 ### 2.3. Resumen de requerimientos para el taller:
 - Laptop
@@ -72,7 +72,7 @@ b. Profesionales, estudiantes **con** conocimientos de programación. En este ca
 Dos talleres serán realizados en Chile a principios del mes de Abril:
 
 - **1 de Abril, 2017**: Facultad de Arquitectura y Urbanismo, Universidad de Chile. Desde las 10:00 a las 15:00 horas.
-- **8 de Abril, 2017**: FabLab UC. Centro de Innovación UC Anacleto Angelini. Desde las 10:00 a las 15:00 horas.
+- **8 de Abril, 2017**: FADEU UC, Auditorio Sur. Monseñor Carlos Casanueva 0335, Providencia, Región Metropolitana. Desde las 10:00 hasta las 13:00 horas.
 
 Los cupos son limitados. Ojo.
 
@@ -82,6 +82,7 @@ Los cupos son limitados. Ojo.
 ## 7. Programa
 Se entregará una guía con los detalles específicos a los participantes, pero en un principio el programa es el que sigue:
 
+### 7.1. FAU:
 + 10:00 - 10:10: Inicio y Bienvenida.
 + 10:10 - 10:30: Presentación Proyectos Ciencia Ciudadana de Datos (Cristian Hernández).
 + 10:30 - 11:30: Preparación de las Herramientas trabajo práctico.
@@ -90,6 +91,15 @@ Se entregará una guía con los detalles específicos a los participantes, pero 
 + 12:15 - 13:40: Aplicación del Instrumento y Visualización.
 + 13:40 - 14:15: Interpretación Resultados y escritura del Artículo.
 + 14:15 - 15:00: *Carrousel* de resultados y finalización.
+
+### 7.2. FADEU:
++ 10:00 - 10:10: Inicio y Bienvenida.
++ 10:10 - 10:30: Presentación Proyectos Ciencia Ciudadana de Datos.
++ 10:30 - 11:00: Preparación de las Herramientas trabajo práctico.
++ 11:00 - 12:00: Aplicación del Instrumento y Visualización.
++ 12:00 - 12:30: Interpretación Resultados y escritura del Artículo.
++ 12:30 - 13:00: Finalización.
+
 
 ## 8. Octal es un proyecto auspiciado por:
 ![auspiciadores-octal](img/auspiciadores.png)
