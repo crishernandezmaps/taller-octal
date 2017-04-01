@@ -8,8 +8,8 @@ const providencia = [-70.636261, -33.449867, -70.582146, -33.407299]; // Oeste, 
 const stream = T.stream('statuses/filter', {locations: providencia});
 
 // Preparar documento en donde se escribirán los resultados
-let headers = 'usuario' + ',' + 'seguidores' + ',' + 'residencia' + ',' + 'fecha' + ',' + 'hora' + ',' + 'fuente' + '\n';
-let n = 'data/tweets-providencia.csv';
+let headers = 'residencia' + ',' + 'fuente' + '\n';
+let n = 'data/tweets.csv';
 fs.writeFile(n, headers, function (err) {
     if (err) throw err;
 });
@@ -59,15 +59,16 @@ function searchTweets() {
         let max = tweet.max_id_str;
         let ver = tweet.user.verified;
 
-        let resultado = name + ',' + followers + ',' + place + ',' + date_time + ',' + source + '\n'; // just for console
+        let resultado = place + ',' + source + '\n'; // just for console
 
         if (country == 'Chile' && max == undefined && ver == false) {
             if (source == 'Android' || source == 'iPhone') {
-                // Append results
-                fs.appendFile(n, resultado, (err) => {
-                    if (err) throw err;
-                });
-                console.log(resultado);
+              let resultado = place + ',' + source + '\n'; // just for console
+              // Append results
+              fs.appendFile(n, resultado, (err) => {
+                  if (err) throw err;
+              });
+              console.log(resultado);
             }
         };
 

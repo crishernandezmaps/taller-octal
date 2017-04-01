@@ -117,7 +117,7 @@ function compare(search) {
 }
 
 // Llamamos la función con la búsqueda compilada
-let key = 'piñera'; // TU BÚSQUEDA AQUÍ. EJEMPLO: 'MIGRACIÓN' (UN TÉRMINO) o 'MIGRACION+CHILE' (DOS TÉRMINOS)
+let key = 'trump'; // TU BÚSQUEDA AQUÍ. EJEMPLO: 'MIGRACIÓN' (UN TÉRMINO) o 'MIGRACION+CHILE' (DOS TÉRMINOS)
 
 //////////
 let busqueda = 'https://www.google.co.uk/search?q=' + key + '+site:latercera.com&num=100&tbs=qdr:y&source=lnt&sa=X&ved=0ahUKEwjR3su77-TSAhVBLsAKHeI9CcEQpwUIFA&biw=1329&bih=678';
