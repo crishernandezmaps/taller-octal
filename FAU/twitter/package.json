@@ -1,0 +1,27 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "ejemplos de uso de twitter api",
+  "main": "user.js",
+  "scripts": {
+    "test": "node user"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crishernandezmaps/octal.git"
+  },
+  "keywords": [
+    "twitter",
+    "api"
+  ],
+  "author": "cris hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crishernandezmaps/octal/issues"
+  },
+  "homepage": "https://github.com/crishernandezmaps/octal#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "twit": "^2.2.5"
+  }
+}

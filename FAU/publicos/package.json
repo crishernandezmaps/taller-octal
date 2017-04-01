@@ -1,0 +1,30 @@
+{
+  "name": "publicos",
+  "version": "1.0.0",
+  "description": "ejercicio de trabajo con datos publicos abiertos",
+  "main": "pub.js",
+  "scripts": {
+    "test": "node pub"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crishernandezmaps/octal.git"
+  },
+  "keywords": [
+    "datos",
+    "ciudadanos",
+    "taller",
+    "node.js"
+  ],
+  "author": "cris hernandez - crishernandez.co",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crishernandezmaps/octal/issues"
+  },
+  "homepage": "https://github.com/crishernandezmaps/octal#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "opn": "^4.0.2",
+    "request": "^2.81.0"
+  }
+}
