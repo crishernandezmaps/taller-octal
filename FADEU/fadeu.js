@@ -41,11 +41,12 @@ function lux(ciudad) {
           // Le pedimos a los datos que nos entreguen la información sobre los sensores de luz.
           if (light === 14) {
             let avg = (parseInt(raw_value) + parseInt(prev_raw_value))/2
-            let result = con + ',' + cit + ',' + id_device + ',' + avg + ',' + lat + ',' + lon + ',' + url_device + '\n';
+            let pop = 'lux ' + avg;
+            let result =  pop + ',' + con + ',' + cit + ',' + id_device + ',' + avg + ',' + lat + ',' + lon + ',' + url_device + '\n';
 
             // Escribimos documento donde guardaremos resultados
-            let headers = 'pais' + ',' + 'ciudad' + ',' + 'id' + ',' + 'avgLux' + ',' +  'latitude' +  ',' +  'longitude' +  ',' + 'url' + '\n'; // Nombre columnas
-            let n = 'data' + '/' + 'santiago' + '.csv'; // path
+            let headers = 'popupContent' + ',' + 'pais' + ',' + 'ciudad' + ',' + 'id' + ',' + 'avgLux' + ',' +  'latitude' +  ',' +  'longitude' +  ',' + 'url' + '\n'; // Nombre columnas
+            let n = 'data' + '/' + 'latinamerica' + '.csv'; // path
 
             fs.readFile(n, 'utf8', function (err,data) {
               if (err) {
@@ -74,10 +75,10 @@ function lux(ciudad) {
   });
 };
 
-// const cities = ['Buenos Aires','Santiago','Antofagasta','São Paulo','Rio de Janeiro','Cusco','João Pessoa','Belém','Quito','Cali','Popayán','Mérida','Barranquilla','Ciudad de México','Ciudad López Mateos','Monterrey','San José','San Salvador','Guatemala','Port of Spain','Juncos'];
-//
-// for (let i = 0; i < cities.length; i++) {
-//   lux(cities[i]);
-// }
+const cities = ['Buenos Aires','Santiago','Antofagasta','São Paulo','Rio de Janeiro','Cusco','João Pessoa','Belém','Quito','Cali','Popayán','Barranquilla','Ciudad de México','Ciudad López Mateos','Monterrey','San José','San Salvador','Guatemala','Port of Spain','Juncos'];
 
-const busqueda = lux('Santiago'); // Modifica la Ciudad por una de tu interé. Ejemplo: 'Buenos Aires'.
+for (let i = 0; i < cities.length; i++) {
+  lux(cities[i]);
+}
+
+// const busqueda = lux('Santiago'); // Modifica la Ciudad por una de tu interé. Ejemplo: 'Buenos Aires'.

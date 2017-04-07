@@ -1,0 +1,779 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 11",
+        "pais": "Chile",
+        "ciudad": "Santiago",
+        "id": "3683",
+        "avgLux": "11",
+        "url": "https://api.smartcitizen.me/v0/devices/3683"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6424804,
+          -33.4381831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 1258",
+        "pais": "Chile",
+        "ciudad": "Santiago",
+        "id": "3659",
+        "avgLux": "1258",
+        "url": "https://api.smartcitizen.me/v0/devices/3659"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6432163715363,
+          -33.4371625635566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 2789",
+        "pais": "Chile",
+        "ciudad": "Santiago",
+        "id": "3675",
+        "avgLux": "2789",
+        "url": "https://api.smartcitizen.me/v0/devices/3675"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6424975395203,
+          -33.4395037710933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 104",
+        "pais": "Chile",
+        "ciudad": "Santiago",
+        "id": "3429",
+        "avgLux": "104",
+        "url": "https://api.smartcitizen.me/v0/devices/3429"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6580268,
+          -33.4321724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 119",
+        "pais": "Chile",
+        "ciudad": "Santiago",
+        "id": "3685",
+        "avgLux": "119",
+        "url": "https://api.smartcitizen.me/v0/devices/3685"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6411604,
+          -33.4382678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 215.5",
+        "pais": "Brazil",
+        "ciudad": "João Pessoa",
+        "id": "3422",
+        "avgLux": "215.5",
+        "url": "https://api.smartcitizen.me/v0/devices/3422"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8307468,
+          -7.1648126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 0",
+        "pais": "Brazil",
+        "ciudad": "João Pessoa",
+        "id": "2394",
+        "avgLux": "0",
+        "url": "https://api.smartcitizen.me/v0/devices/2394"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.836208820343,
+          -7.09519673124506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 23",
+        "pais": "Brazil",
+        "ciudad": "João Pessoa",
+        "id": "1265",
+        "avgLux": "23",
+        "url": "https://api.smartcitizen.me/v0/devices/1265"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.840334027478,
+          -7.08378734340308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 4285.5",
+        "pais": "Ecuador",
+        "ciudad": "Quito",
+        "id": "2304",
+        "avgLux": "4285.5",
+        "url": "https://api.smartcitizen.me/v0/devices/2304"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.502534031868,
+          -0.20975900523896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 1",
+        "pais": "Ecuador",
+        "ciudad": "Quito",
+        "id": "2575",
+        "avgLux": "1",
+        "url": "https://api.smartcitizen.me/v0/devices/2575"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.4531086,
+          -0.0332741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 520",
+        "pais": "Mexico",
+        "ciudad": "Ciudad López Mateos",
+        "id": "1226",
+        "avgLux": "520",
+        "url": "https://api.smartcitizen.me/v0/devices/1226"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.2674713,
+          19.5562275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 0",
+        "pais": "El Salvador",
+        "ciudad": "San Salvador",
+        "id": "1754",
+        "avgLux": "0",
+        "url": "https://api.smartcitizen.me/v0/devices/1754"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.2181911,
+          13.6929403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 4540",
+        "pais": "Guatemala",
+        "ciudad": "Guatemala",
+        "id": "2250",
+        "avgLux": "4540",
+        "url": "https://api.smartcitizen.me/v0/devices/2250"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.535278,
+          14.613333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 12",
+        "pais": "Trinidad and Tobago",
+        "ciudad": "Port of Spain",
+        "id": "481",
+        "avgLux": "12",
+        "url": "https://api.smartcitizen.me/v0/devices/481"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.52368,
+          10.6643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 53.5",
+        "pais": "Mexico",
+        "ciudad": "Monterrey",
+        "id": "4167",
+        "avgLux": "53.5",
+        "url": "https://api.smartcitizen.me/v0/devices/4167"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.3564466,
+          25.6888021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 1",
+        "pais": "Mexico",
+        "ciudad": "Monterrey",
+        "id": "673",
+        "avgLux": "1",
+        "url": "https://api.smartcitizen.me/v0/devices/673"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.3608681,
+          25.6828018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 166",
+        "pais": "Chile",
+        "ciudad": "Antofagasta",
+        "id": "3287",
+        "avgLux": "166",
+        "url": "https://api.smartcitizen.me/v0/devices/3287"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.4308497905731,
+          -23.7282235264797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 41.5",
+        "pais": "Peru",
+        "ciudad": "Cusco",
+        "id": "3072",
+        "avgLux": "41.5",
+        "url": "https://api.smartcitizen.me/v0/devices/3072"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.9654762,
+          -13.5174479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 3618",
+        "pais": "Chile",
+        "ciudad": "Antofagasta",
+        "id": "4106",
+        "avgLux": "3618",
+        "url": "https://api.smartcitizen.me/v0/devices/4106"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.3796946,
+          -23.6323908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 183",
+        "pais": "Chile",
+        "ciudad": "Antofagasta",
+        "id": "3663",
+        "avgLux": "183",
+        "url": "https://api.smartcitizen.me/v0/devices/3663"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.4207807779312,
+          -23.7023354228104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 853",
+        "pais": "Chile",
+        "ciudad": "Antofagasta",
+        "id": "4104",
+        "avgLux": "853",
+        "url": "https://api.smartcitizen.me/v0/devices/4104"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.3943207859993,
+          -23.6388630532765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 2990",
+        "pais": "Chile",
+        "ciudad": "Antofagasta",
+        "id": "4109",
+        "avgLux": "2990",
+        "url": "https://api.smartcitizen.me/v0/devices/4109"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.3904805,
+          -23.6426959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 384",
+        "pais": "Chile",
+        "ciudad": "Antofagasta",
+        "id": "2711",
+        "avgLux": "384",
+        "url": "https://api.smartcitizen.me/v0/devices/2711"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.4379415512085,
+          -23.7273100895196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 511",
+        "pais": "Chile",
+        "ciudad": "Antofagasta",
+        "id": "4135",
+        "avgLux": "511",
+        "url": "https://api.smartcitizen.me/v0/devices/4135"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.4024431,
+          -23.6564784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 5",
+        "pais": "Chile",
+        "ciudad": "Antofagasta",
+        "id": "3019",
+        "avgLux": "5",
+        "url": "https://api.smartcitizen.me/v0/devices/3019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.3956055641174,
+          -23.6457428853211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 16",
+        "pais": "Chile",
+        "ciudad": "Antofagasta",
+        "id": "4140",
+        "avgLux": "16",
+        "url": "https://api.smartcitizen.me/v0/devices/4140"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.4202523827553,
+          -23.7015740746898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 1",
+        "pais": "Chile",
+        "ciudad": "Antofagasta",
+        "id": "4103",
+        "avgLux": "1",
+        "url": "https://api.smartcitizen.me/v0/devices/4103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.3932134,
+          -23.6543741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 10",
+        "pais": "Chile",
+        "ciudad": "Antofagasta",
+        "id": "4105",
+        "avgLux": "10",
+        "url": "https://api.smartcitizen.me/v0/devices/4105"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.3850438,
+          -23.6541535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 0",
+        "pais": "Puerto Rico",
+        "ciudad": "Juncos",
+        "id": "3190",
+        "avgLux": "0",
+        "url": "https://api.smartcitizen.me/v0/devices/3190"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.8635628223419,
+          18.2796845086582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 283",
+        "pais": "Brazil",
+        "ciudad": "Belém",
+        "id": "1388",
+        "avgLux": "283",
+        "url": "https://api.smartcitizen.me/v0/devices/1388"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4901799,
+          -1.4557549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 6",
+        "pais": "Costa Rica",
+        "ciudad": "San José",
+        "id": "1365",
+        "avgLux": "6",
+        "url": "https://api.smartcitizen.me/v0/devices/1365"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.0907246,
+          9.9280694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 32",
+        "pais": "Colombia",
+        "ciudad": "Popayán",
+        "id": "2314",
+        "avgLux": "32",
+        "url": "https://api.smartcitizen.me/v0/devices/2314"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.605721,
+          2.441304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 403",
+        "pais": "Colombia",
+        "ciudad": "Popayán",
+        "id": "2392",
+        "avgLux": "403",
+        "url": "https://api.smartcitizen.me/v0/devices/2392"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.605721,
+          2.441304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 5",
+        "pais": "Colombia",
+        "ciudad": "Popayán",
+        "id": "2407",
+        "avgLux": "5",
+        "url": "https://api.smartcitizen.me/v0/devices/2407"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.605721,
+          2.441304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 64",
+        "pais": "Brazil",
+        "ciudad": "Rio de Janeiro",
+        "id": "1243",
+        "avgLux": "64",
+        "url": "https://api.smartcitizen.me/v0/devices/1243"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2007101,
+          -22.9133954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 116",
+        "pais": "Argentina",
+        "ciudad": "Buenos Aires",
+        "id": "1050",
+        "avgLux": "116",
+        "url": "https://api.smartcitizen.me/v0/devices/1050"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.385191,
+          -34.5921077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 34.5",
+        "pais": "Mexico",
+        "ciudad": "Ciudad de México",
+        "id": "3208",
+        "avgLux": "34.5",
+        "url": "https://api.smartcitizen.me/v0/devices/3208"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1760838031769,
+          19.3251762741318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 2",
+        "pais": "Argentina",
+        "ciudad": "Buenos Aires",
+        "id": "1380",
+        "avgLux": "2",
+        "url": "https://api.smartcitizen.me/v0/devices/1380"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3749553,
+          -34.6172813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 45",
+        "pais": "Colombia",
+        "ciudad": "Popayán",
+        "id": "2395",
+        "avgLux": "45",
+        "url": "https://api.smartcitizen.me/v0/devices/2395"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.605721,
+          2.441304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 260",
+        "pais": "Colombia",
+        "ciudad": "Popayán",
+        "id": "2347",
+        "avgLux": "260",
+        "url": "https://api.smartcitizen.me/v0/devices/2347"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5884399414062,
+          2.4534925411896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 17",
+        "pais": "Colombia",
+        "ciudad": "Cali",
+        "id": "4202",
+        "avgLux": "17",
+        "url": "https://api.smartcitizen.me/v0/devices/4202"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5005278587341,
+          3.44940242851821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 50",
+        "pais": "Mexico",
+        "ciudad": "Ciudad de México",
+        "id": "2046",
+        "avgLux": "50",
+        "url": "https://api.smartcitizen.me/v0/devices/2046"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1561883,
+          19.3437444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "lux 66",
+        "pais": "Colombia",
+        "ciudad": "Cali",
+        "id": "3394",
+        "avgLux": "66",
+        "url": "https://api.smartcitizen.me/v0/devices/3394"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5112911,
+          3.4508339
+        ]
+      }
+    }
+  ]
+}
