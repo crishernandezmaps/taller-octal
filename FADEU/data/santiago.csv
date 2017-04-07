@@ -1,0 +1,6 @@
+pais,ciudad,id,avgLux,latitude,longitude,url
+Chile,Santiago,3675,2789,-33.4395037710933,-70.6424975395203,https://api.smartcitizen.me/v0/devices/3675
+Chile,Santiago,3659,1258,-33.4371625635566,-70.6432163715363,https://api.smartcitizen.me/v0/devices/3659
+Chile,Santiago,3429,104,-33.4321724,-70.6580268,https://api.smartcitizen.me/v0/devices/3429
+Chile,Santiago,3683,11,-33.4381831,-70.6424804,https://api.smartcitizen.me/v0/devices/3683
+Chile,Santiago,3685,119,-33.4382678,-70.6411604,https://api.smartcitizen.me/v0/devices/3685

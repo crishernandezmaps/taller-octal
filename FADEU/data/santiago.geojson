@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "pais": "Chile",
+        "ciudad": "Santiago",
+        "id": "3675",
+        "avgLux": "2789",
+        "url": "https://api.smartcitizen.me/v0/devices/3675"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6424975395203,
+          -33.4395037710933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pais": "Chile",
+        "ciudad": "Santiago",
+        "id": "3659",
+        "avgLux": "1258",
+        "url": "https://api.smartcitizen.me/v0/devices/3659"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6432163715363,
+          -33.4371625635566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pais": "Chile",
+        "ciudad": "Santiago",
+        "id": "3429",
+        "avgLux": "104",
+        "url": "https://api.smartcitizen.me/v0/devices/3429"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6580268,
+          -33.4321724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pais": "Chile",
+        "ciudad": "Santiago",
+        "id": "3683",
+        "avgLux": "11",
+        "url": "https://api.smartcitizen.me/v0/devices/3683"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6424804,
+          -33.4381831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pais": "Chile",
+        "ciudad": "Santiago",
+        "id": "3685",
+        "avgLux": "119",
+        "url": "https://api.smartcitizen.me/v0/devices/3685"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6411604,
+          -33.4382678
+        ]
+      }
+    }
+  ]
+}
