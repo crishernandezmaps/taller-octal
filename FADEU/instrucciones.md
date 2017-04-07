@@ -4,7 +4,7 @@
 El siguiente taller busca la realización de un ejercicio práctico de ciencia ciudadana, enfocado al conocimiento del impacto de la polución lumínica en Chile e internacionalmente.
 
 CSV to GeoJson: http://www.convertcsv.com/csv-to-geojson.htm
-npm install -g csv2geojson ::: https://github.com/mapbox/csv2geojson 
+npm install -g csv2geojson ::: https://github.com/mapbox/csv2geojson
 
 
 ## Escala Lux
@@ -25,3 +25,5 @@ npm install -g csv2geojson ::: https://github.com/mapbox/csv2geojson
 |32,000–100,000|Direct sunlight|
 
 *fuente: [wikipedia](https://en.wikipedia.org/wiki/Lux)*
+
+<script src="https://embed.github.com/view/geojson/benbalter/dc-wifi-social/master/bars.geojson"></script>
