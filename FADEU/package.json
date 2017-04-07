@@ -1,0 +1,25 @@
+{
+  "name": "fadeu",
+  "version": "1.0.0",
+  "description": "octal workshop - script",
+  "main": "fadeu.js",
+  "scripts": {
+    "test": "node fadeu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "#"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "fadeu",
+    "octal"
+  ],
+  "author": "cris hernandez",
+  "license": "ISC",
+  "dependencies": {
+    "csv2geojson": "^5.0.2",
+    "request": "^2.81.0"
+  }
+}
