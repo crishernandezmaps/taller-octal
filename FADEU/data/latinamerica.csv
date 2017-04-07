@@ -1,0 +1,46 @@
+pais,ciudad,id,avgLux,latitude,longitude,url
+Brazil,João Pessoa,1265,23,-7.08378734340308,-34.840334027478,https://api.smartcitizen.me/v0/devices/1265
+Brazil,João Pessoa,2394,0,-7.09519673124506,-34.836208820343,https://api.smartcitizen.me/v0/devices/2394
+Brazil,João Pessoa,3422,223.5,-7.1648126,-34.8307468,https://api.smartcitizen.me/v0/devices/3422
+Argentina,Buenos Aires,1050,116,-34.5921077,-58.385191,https://api.smartcitizen.me/v0/devices/1050
+El Salvador,San Salvador,1754,0,13.6929403,-89.2181911,https://api.smartcitizen.me/v0/devices/1754
+Argentina,Buenos Aires,1380,2,-34.6172813,-58.3749553,https://api.smartcitizen.me/v0/devices/1380
+Chile,Santiago,3675,2789,-33.4395037710933,-70.6424975395203,https://api.smartcitizen.me/v0/devices/3675
+Chile,Santiago,3659,1258,-33.4371625635566,-70.6432163715363,https://api.smartcitizen.me/v0/devices/3659
+Chile,Santiago,3685,119,-33.4382678,-70.6411604,https://api.smartcitizen.me/v0/devices/3685
+Chile,Santiago,3683,11,-33.4381831,-70.6424804,https://api.smartcitizen.me/v0/devices/3683
+Chile,Santiago,3429,104,-33.4321724,-70.6580268,https://api.smartcitizen.me/v0/devices/3429
+Brazil,Rio de Janeiro,1243,64,-22.9133954,-43.2007101,https://api.smartcitizen.me/v0/devices/1243
+Brazil,Belém,1388,283,-1.4557549,-48.4901799,https://api.smartcitizen.me/v0/devices/1388
+Mexico,Ciudad de México,2046,50,19.3437444,-99.1561883,https://api.smartcitizen.me/v0/devices/2046
+Mexico,Ciudad de México,3208,34.5,19.3251762741318,-99.1760838031769,https://api.smartcitizen.me/v0/devices/3208
+Mexico,Ciudad López Mateos,1226,520,19.5562275,-99.2674713,https://api.smartcitizen.me/v0/devices/1226
+Venezuela, Bolivarian Republic of,Mérida,2149,0,8.5934,-71.14695,https://api.smartcitizen.me/v0/devices/2149
+Venezuela, Bolivarian Republic of,Mérida,1681,7,8.6,-71.15,https://api.smartcitizen.me/v0/devices/1681
+Chile,Antofagasta,4135,511,-23.6564784,-70.4024431,https://api.smartcitizen.me/v0/devices/4135
+Chile,Antofagasta,3019,5,-23.6457428853211,-70.3956055641174,https://api.smartcitizen.me/v0/devices/3019
+Chile,Antofagasta,4104,853,-23.6388630532765,-70.3943207859993,https://api.smartcitizen.me/v0/devices/4104
+Chile,Antofagasta,3287,166,-23.7282235264797,-70.4308497905731,https://api.smartcitizen.me/v0/devices/3287
+Chile,Antofagasta,2711,384,-23.7273100895196,-70.4379415512085,https://api.smartcitizen.me/v0/devices/2711
+Chile,Antofagasta,4103,1,-23.6543741,-70.3932134,https://api.smartcitizen.me/v0/devices/4103
+Chile,Antofagasta,4109,2990,-23.6426959,-70.3904805,https://api.smartcitizen.me/v0/devices/4109
+Chile,Antofagasta,4105,10,-23.6541535,-70.3850438,https://api.smartcitizen.me/v0/devices/4105
+Chile,Antofagasta,3663,183,-23.7023354228104,-70.4207807779312,https://api.smartcitizen.me/v0/devices/3663
+Chile,Antofagasta,4106,3618,-23.6323908,-70.3796946,https://api.smartcitizen.me/v0/devices/4106
+Chile,Antofagasta,4140,16,-23.7015740746898,-70.4202523827553,https://api.smartcitizen.me/v0/devices/4140
+Puerto Rico,Juncos,3190,0,18.2796845086582,-65.8635628223419,https://api.smartcitizen.me/v0/devices/3190
+Ecuador,Quito,2304,4285.5,-0.20975900523896,-78.502534031868,https://api.smartcitizen.me/v0/devices/2304
+Ecuador,Quito,2575,1,-0.0332741,-78.4531086,https://api.smartcitizen.me/v0/devices/2575
+Guatemala,Guatemala,2250,4540,14.613333,-90.535278,https://api.smartcitizen.me/v0/devices/2250
+Trinidad and Tobago,Port of Spain,481,12,10.6643,-61.52368,https://api.smartcitizen.me/v0/devices/481
+Mexico,Monterrey,673,1,25.6828018,-100.3608681,https://api.smartcitizen.me/v0/devices/673
+Mexico,Monterrey,4167,53.5,25.6888021,-100.3564466,https://api.smartcitizen.me/v0/devices/4167
+Costa Rica,San José,1365,6,9.9280694,-84.0907246,https://api.smartcitizen.me/v0/devices/1365
+Peru,Cusco,3072,41.5,-13.5174479,-71.9654762,https://api.smartcitizen.me/v0/devices/3072
+Colombia,Cali,4202,17,3.44940242851821,-76.5005278587341,https://api.smartcitizen.me/v0/devices/4202
+Colombia,Cali,3394,66,3.4508339,-76.5112911,https://api.smartcitizen.me/v0/devices/3394
+Colombia,Popayán,2392,403,2.441304,-76.605721,https://api.smartcitizen.me/v0/devices/2392
+Colombia,Popayán,2314,32,2.441304,-76.605721,https://api.smartcitizen.me/v0/devices/2314
+Colombia,Popayán,2407,5,2.441304,-76.605721,https://api.smartcitizen.me/v0/devices/2407
+Colombia,Popayán,2395,45,2.441304,-76.605721,https://api.smartcitizen.me/v0/devices/2395
+Colombia,Popayán,2347,260,2.4534925411896,-76.5884399414062,https://api.smartcitizen.me/v0/devices/2347

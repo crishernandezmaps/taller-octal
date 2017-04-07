@@ -45,7 +45,7 @@ function lux(ciudad) {
 
             // Escribimos documento donde guardaremos resultados
             let headers = 'pais' + ',' + 'ciudad' + ',' + 'id' + ',' + 'avgLux' + ',' +  'latitude' +  ',' +  'longitude' +  ',' + 'url' + '\n'; // Nombre columnas
-            let n = 'data' + '/' + 'resultados' + '.csv'; // path
+            let n = 'data' + '/' + 'latinamerica' + '.csv'; // path
 
             fs.readFile(n, 'utf8', function (err,data) {
               if (err) {
@@ -74,4 +74,10 @@ function lux(ciudad) {
   });
 };
 
-const busqueda = lux('Buenos Aires'); // Modifica la Ciudad por una de tu interé. Ejemplo: 'Buenos Aires'.
+const cities = ['Buenos Aires','Santiago','Antofagasta','São Paulo','Rio de Janeiro','Cusco','João Pessoa','Belém','Quito','Cali','Popayán','Mérida','Barranquilla','Ciudad de México','Ciudad López Mateos','Monterrey','San José','San Salvador','Guatemala','Port of Spain','Juncos'];
+
+for (let i = 0; i < cities.length; i++) {
+  lux(cities[i]);
+}
+
+// const busqueda = lux('Buenos Aires'); // Modifica la Ciudad por una de tu interé. Ejemplo: 'Buenos Aires'.
