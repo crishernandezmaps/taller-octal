@@ -7,7 +7,7 @@ El siguiente taller busca la realización de un ejercicio práctico de ciencia c
 1. Descargar en formato JSON los datos de todos los sensores pertenecientes a la red https://api.smartcitizen.me/v0/devices/world_map
 2. Inspeccionar los datos.
 3. Elegir tres ciudades para realizar una comparación.
-4. Rellenar array 'ciudades' en el script.
+4. Rellenar array 'ciudades' en el script: comparar al menos cinco ciudades.
 5. Ejecutar el script utilizando node.js 'node fadeu.js'.
 6. Acceder a la carpeta datos utilizando terminal/command prompt 'cd data'.
 7. Inspeccionar los datos que tenemos en dicho directorio 'ls' (Mac/Linux) o 'Dir' (Windows) - para usuarios windows mirar algunos comandos útiles: https://commandwindows.com/command3.htm
@@ -17,7 +17,7 @@ El siguiente taller busca la realización de un ejercicio práctico de ciencia c
 11. Visualizar los datos en formato .CSV utilizando http://app.rawgraphs.io/ (Box Plot).
 12. Descargar la visualización como imagen .PNG.
 13. Insertar la dirección de la imagen en 'map.html' en la línea '<img src="img/boxes.png">'
-14. Escribir análisis en el archivo 'map.html'. Solo dos párrafos modificando los tags '<p>' en el archivo 'map.html'.
+14. Escribir análisis en el archivo 'map.html'. Solo dos párrafos modificando los tags '<p>' en el archivo 'map.html'. Puedes buscar noticias en internet que complementen tu análisis.
 15. Cambiar el nombre a la carpeta que contiene los archivos por tu nombre, comprimirla y enviarla una vez finalizado el ejercicio y al correo cristian.hernandez@commonactionforum.net .
 
 ### Información para el análisis
@@ -40,3 +40,12 @@ El siguiente taller busca la realización de un ejercicio práctico de ciencia c
 |32,000–100,000|Direct sunlight|
 
 *fuente: [wikipedia](https://en.wikipedia.org/wiki/Lux)*
+
+#### Algunas noticias al respecto
+http://www.latercera.com/noticia/chile-entre-paises-mas-expuestos-a-la-contaminacion-luminica/
+http://www.adnradio.cl/noticias/sociedad/mapa-interactivo-muestra-los-niveles-de-contaminacion-luminica-en-el-planeta/20160908/nota/3240494.aspx
+http://www.adnradio.cl/noticias/sociedad/un-tercio-de-la-poblacion-mundial-no-puede-ver-la-via-lactea/20160610/nota/3157354.aspx
+http://advances.sciencemag.org/content/2/6/e1600377.full
+https://www.lightpollutionmap.info/#zoom=8&lat=-3968454&lon=-7879260&layers=B0TFFFFF
+http://darksky.org/eyes-in-the-sky-exploring-global-light-pollution-with-satellite-maps/
+https://eventosti.net/blog/2017/03/16/chile-capital-mundial-astroinformatica/

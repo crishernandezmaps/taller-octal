@@ -1,14 +1,17 @@
+// Dependencias o librerias
 const request = require("request");
 const fs = require('fs');
+// Nuestros datos con la base de datos global (data/world_map.json)
 const data = require('./data/world_map.json');
 
+// Función que buscará todos los sensores que se encuentren dispuestos outdoor para las ciudades que hemos seleccionado.
 function lux(ciudad) {
 
   for (let i = 0; i < data.length; i++) {
     let id = data[i].id;
     let light = parseInt(data[i].data[14]);
     let date = data[i].added_at;
-    let url_json = 'https://api.smartcitizen.me/v0/devices/' + data[i].id;
+    let url_json = 'https://api.smartcitizen.me/v0/devices/' + data[i].id; // url individual de cada sensor.
     let latitude = data[i].latitude;
     let longitude = data[i].longitude;
     let city = data[i].city;
@@ -43,8 +46,8 @@ function lux(ciudad) {
   };
 };
 
-let ciudades = ['Santiago','London','Madrid']
+let ciudades = ['Barcelona','London','Madrid','Berlin','Paris'] // Modifica las ciudades para comparar al menos cinco casos.
 
-for (let i = 0; i < ciudades.length; i++) {
+for (let i = 0; i < ciudades.length; i++) { // recorremos la lista de ciudades y llamamos nuestra función.
   lux(ciudades[i]);
 }
