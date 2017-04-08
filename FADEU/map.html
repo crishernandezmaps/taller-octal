@@ -7,22 +7,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js'></script>
 
 	<style>
 		body {
 			background: #fff;
 		}
 		#map {
-			border: 1px solid #131313;
-			width: 50%;
-			height: 400px;
+			width: 100%;
+			height: 500px;
   		margin: 0 auto;
+			padding: 0;
 		}
 		#text {
 			color: #131313;
 			width: 70%;
+			margin: 5% auto;
+			font-family: 'Roboto', sans-serif;
+		}
+		#text img {
+			width: 80%;
+			height: 450px;
+			display: block;
 			margin: 5% auto;
 		}
 	</style>
@@ -31,9 +39,8 @@
 </head>
 <body>
 	<div id='map'></div>
-	<script src="data/santiago.geojson" type="text/javascript"></script>
 	<script>
-		var map = L.map('map').setView([-33.459229, -70.645348], 12);
+		var map = L.map('map').setView([16.723733,-29.236927], 2); // Centro de América Zoom 3
 
 		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 			maxZoom: 18,
@@ -45,8 +52,8 @@
 
 		function onEachFeature(feature, layer) {
 		    // does this feature have a property named popupContent?
-		    if (feature.properties && feature.properties.popupContent) {
-		        layer.bindPopup(feature.properties.popupContent);
+		    if (feature.properties && feature.properties.lux) {
+		        layer.bindPopup(feature.properties.lux);
 		    }
 		}
 
@@ -56,30 +63,79 @@
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 11",
-		        "pais": "Chile",
-		        "ciudad": "Santiago",
-		        "id": "3683",
-		        "avgLux": "11",
-		        "url": "https://api.smartcitizen.me/v0/devices/3683"
+		        "id": "3514",
+		        "lux": "357",
+		        "ciudad": "Vevey",
+		        "codigo_pais": "CH",
+		        "json": "https://api.smartcitizen.me/v0/devices/3514"
 		      },
 		      "geometry": {
 		        "type": "Point",
 		        "coordinates": [
-		          -70.6424804,
-		          -33.4381831
+		          6.84974491596222,
+		          46.4590171934927
 		        ]
 		      }
 		    },
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 1258",
-		        "pais": "Chile",
-		        "ciudad": "Santiago",
+		        "id": "3681",
+		        "lux": "56",
+		        "ciudad": "Codemondo",
+		        "codigo_pais": "IT",
+		        "json": "https://api.smartcitizen.me/v0/devices/3681"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          10.5592775344849,
+		          44.6903185291056
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3644",
+		        "lux": "66",
+		        "ciudad": "Kerkira",
+		        "codigo_pais": "GR",
+		        "json": "https://api.smartcitizen.me/v0/devices/3644"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          19.9199253,
+		          39.6108648
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3622",
+		        "lux": "197",
+		        "ciudad": "Prévessin-Moëns",
+		        "codigo_pais": "FR",
+		        "json": "https://api.smartcitizen.me/v0/devices/3622"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          6.07440948486328,
+		          46.2536509460847
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
 		        "id": "3659",
-		        "avgLux": "1258",
-		        "url": "https://api.smartcitizen.me/v0/devices/3659"
+		        "lux": "1258",
+		        "ciudad": "Santiago",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/3659"
 		      },
 		      "geometry": {
 		        "type": "Point",
@@ -92,336 +148,62 @@
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 2789",
-		        "pais": "Chile",
-		        "ciudad": "Santiago",
-		        "id": "3675",
-		        "avgLux": "2789",
-		        "url": "https://api.smartcitizen.me/v0/devices/3675"
+		        "id": "3517",
+		        "lux": "80",
+		        "ciudad": "Shanghai",
+		        "codigo_pais": "CN",
+		        "json": "https://api.smartcitizen.me/v0/devices/3517"
 		      },
 		      "geometry": {
 		        "type": "Point",
 		        "coordinates": [
-		          -70.6424975395203,
-		          -33.4395037710933
+		          121.4833618,
+		          31.0953957
 		        ]
 		      }
 		    },
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 104",
-		        "pais": "Chile",
-		        "ciudad": "Santiago",
-		        "id": "3429",
-		        "avgLux": "104",
-		        "url": "https://api.smartcitizen.me/v0/devices/3429"
+		        "id": "3636",
+		        "lux": "5488",
+		        "ciudad": "København",
+		        "codigo_pais": "DK",
+		        "json": "https://api.smartcitizen.me/v0/devices/3636"
 		      },
 		      "geometry": {
 		        "type": "Point",
 		        "coordinates": [
-		          -70.6580268,
-		          -33.4321724
+		          12.5931647,
+		          55.6824773
 		        ]
 		      }
 		    },
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 119",
-		        "pais": "Chile",
-		        "ciudad": "Santiago",
-		        "id": "3685",
-		        "avgLux": "119",
-		        "url": "https://api.smartcitizen.me/v0/devices/3685"
+		        "id": "3676",
+		        "lux": "250",
+		        "ciudad": "Tehran",
+		        "codigo_pais": "IR",
+		        "json": "https://api.smartcitizen.me/v0/devices/3676"
 		      },
 		      "geometry": {
 		        "type": "Point",
 		        "coordinates": [
-		          -70.6411604,
-		          -33.4382678
+		          51.3685727119446,
+		          35.7521894294382
 		        ]
 		      }
 		    },
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 215.5",
-		        "pais": "Brazil",
-		        "ciudad": "João Pessoa",
-		        "id": "3422",
-		        "avgLux": "215.5",
-		        "url": "https://api.smartcitizen.me/v0/devices/3422"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -34.8307468,
-		          -7.1648126
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 0",
-		        "pais": "Brazil",
-		        "ciudad": "João Pessoa",
-		        "id": "2394",
-		        "avgLux": "0",
-		        "url": "https://api.smartcitizen.me/v0/devices/2394"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -34.836208820343,
-		          -7.09519673124506
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 23",
-		        "pais": "Brazil",
-		        "ciudad": "João Pessoa",
-		        "id": "1265",
-		        "avgLux": "23",
-		        "url": "https://api.smartcitizen.me/v0/devices/1265"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -34.840334027478,
-		          -7.08378734340308
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 4285.5",
-		        "pais": "Ecuador",
-		        "ciudad": "Quito",
-		        "id": "2304",
-		        "avgLux": "4285.5",
-		        "url": "https://api.smartcitizen.me/v0/devices/2304"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -78.502534031868,
-		          -0.20975900523896
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 1",
-		        "pais": "Ecuador",
-		        "ciudad": "Quito",
-		        "id": "2575",
-		        "avgLux": "1",
-		        "url": "https://api.smartcitizen.me/v0/devices/2575"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -78.4531086,
-		          -0.0332741
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 520",
-		        "pais": "Mexico",
-		        "ciudad": "Ciudad López Mateos",
-		        "id": "1226",
-		        "avgLux": "520",
-		        "url": "https://api.smartcitizen.me/v0/devices/1226"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -99.2674713,
-		          19.5562275
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 0",
-		        "pais": "El Salvador",
-		        "ciudad": "San Salvador",
-		        "id": "1754",
-		        "avgLux": "0",
-		        "url": "https://api.smartcitizen.me/v0/devices/1754"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -89.2181911,
-		          13.6929403
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 4540",
-		        "pais": "Guatemala",
-		        "ciudad": "Guatemala",
-		        "id": "2250",
-		        "avgLux": "4540",
-		        "url": "https://api.smartcitizen.me/v0/devices/2250"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -90.535278,
-		          14.613333
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 12",
-		        "pais": "Trinidad and Tobago",
-		        "ciudad": "Port of Spain",
-		        "id": "481",
-		        "avgLux": "12",
-		        "url": "https://api.smartcitizen.me/v0/devices/481"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -61.52368,
-		          10.6643
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 53.5",
-		        "pais": "Mexico",
-		        "ciudad": "Monterrey",
-		        "id": "4167",
-		        "avgLux": "53.5",
-		        "url": "https://api.smartcitizen.me/v0/devices/4167"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -100.3564466,
-		          25.6888021
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 1",
-		        "pais": "Mexico",
-		        "ciudad": "Monterrey",
-		        "id": "673",
-		        "avgLux": "1",
-		        "url": "https://api.smartcitizen.me/v0/devices/673"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -100.3608681,
-		          25.6828018
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 166",
-		        "pais": "Chile",
-		        "ciudad": "Antofagasta",
-		        "id": "3287",
-		        "avgLux": "166",
-		        "url": "https://api.smartcitizen.me/v0/devices/3287"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -70.4308497905731,
-		          -23.7282235264797
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 41.5",
-		        "pais": "Peru",
-		        "ciudad": "Cusco",
-		        "id": "3072",
-		        "avgLux": "41.5",
-		        "url": "https://api.smartcitizen.me/v0/devices/3072"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -71.9654762,
-		          -13.5174479
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 3618",
-		        "pais": "Chile",
-		        "ciudad": "Antofagasta",
-		        "id": "4106",
-		        "avgLux": "3618",
-		        "url": "https://api.smartcitizen.me/v0/devices/4106"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -70.3796946,
-		          -23.6323908
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 183",
-		        "pais": "Chile",
-		        "ciudad": "Antofagasta",
-		        "id": "3663",
-		        "avgLux": "183",
-		        "url": "https://api.smartcitizen.me/v0/devices/3663"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -70.4207807779312,
-		          -23.7023354228104
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 853",
-		        "pais": "Chile",
-		        "ciudad": "Antofagasta",
 		        "id": "4104",
-		        "avgLux": "853",
-		        "url": "https://api.smartcitizen.me/v0/devices/4104"
+		        "lux": "853",
+		        "ciudad": "Antofagasta",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/4104"
 		      },
 		      "geometry": {
 		        "type": "Point",
@@ -434,12 +216,147 @@
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 2990",
-		        "pais": "Chile",
-		        "ciudad": "Antofagasta",
+		        "id": "777",
+		        "lux": "15",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/777"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.09371089935303,
+		          41.2888356262915
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3672",
+		        "lux": "10",
+		        "ciudad": "Kerkira",
+		        "codigo_pais": "GR",
+		        "json": "https://api.smartcitizen.me/v0/devices/3672"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          19.8585176467896,
+		          39.4999346207221
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3546",
+		        "lux": "25",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/3546"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.17097997665405,
+		          41.389173249864
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "594",
+		        "lux": "28",
+		        "ciudad": "Otis Orchards-East Farms",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/594"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -117.08,
+		          47.7047222
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "4070",
+		        "lux": "164",
+		        "ciudad": "London",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/4070"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -0.1469141,
+		          51.5965336
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3678",
+		        "lux": "15",
+		        "ciudad": "Lüneburg",
+		        "codigo_pais": "DE",
+		        "json": "https://api.smartcitizen.me/v0/devices/3678"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          10.402798,
+		          53.2498736
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3691",
+		        "lux": "535",
+		        "ciudad": "Paris",
+		        "codigo_pais": "FR",
+		        "json": "https://api.smartcitizen.me/v0/devices/3691"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.395291,
+		          48.868879
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1000008",
+		        "lux": "121",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/1000008"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.19054937362671,
+		          41.3964814756607
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
 		        "id": "4109",
-		        "avgLux": "2990",
-		        "url": "https://api.smartcitizen.me/v0/devices/4109"
+		        "lux": "2990",
+		        "ciudad": "Antofagasta",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/4109"
 		      },
 		      "geometry": {
 		        "type": "Point",
@@ -452,66 +369,181 @@
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 384",
-		        "pais": "Chile",
-		        "ciudad": "Antofagasta",
-		        "id": "2711",
-		        "avgLux": "384",
-		        "url": "https://api.smartcitizen.me/v0/devices/2711"
+		        "id": "2368",
+		        "lux": "6",
+		        "ciudad": "Radenci",
+		        "codigo_pais": "SI",
+		        "json": "https://api.smartcitizen.me/v0/devices/2368"
 		      },
 		      "geometry": {
 		        "type": "Point",
 		        "coordinates": [
-		          -70.4379415512085,
-		          -23.7273100895196
+		          16.039174,
+		          46.636654
 		        ]
 		      }
 		    },
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 511",
-		        "pais": "Chile",
-		        "ciudad": "Antofagasta",
-		        "id": "4135",
-		        "avgLux": "511",
-		        "url": "https://api.smartcitizen.me/v0/devices/4135"
+		        "id": "2363",
+		        "lux": "881",
+		        "ciudad": "Auckland",
+		        "codigo_pais": "NZ",
+		        "json": "https://api.smartcitizen.me/v0/devices/2363"
 		      },
 		      "geometry": {
 		        "type": "Point",
 		        "coordinates": [
-		          -70.4024431,
-		          -23.6564784
+		          174.6584473,
+		          -36.7944534
 		        ]
 		      }
 		    },
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 5",
-		        "pais": "Chile",
-		        "ciudad": "Antofagasta",
-		        "id": "3019",
-		        "avgLux": "5",
-		        "url": "https://api.smartcitizen.me/v0/devices/3019"
+		        "id": "3737",
+		        "lux": "1791",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/3737"
 		      },
 		      "geometry": {
 		        "type": "Point",
 		        "coordinates": [
-		          -70.3956055641174,
-		          -23.6457428853211
+		          2.18441247940063,
+		          41.3669859824556
 		        ]
 		      }
 		    },
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 16",
-		        "pais": "Chile",
-		        "ciudad": "Antofagasta",
+		        "id": "3369",
+		        "lux": "84",
+		        "ciudad": "Renfrewshire",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/3369"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -4.5308423,
+		          55.8483886
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3744",
+		        "lux": "415",
+		        "ciudad": "Écully",
+		        "codigo_pais": "FR",
+		        "json": "https://api.smartcitizen.me/v0/devices/3744"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.7649067,
+		          45.7849662
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3683",
+		        "lux": "11",
+		        "ciudad": "Santiago",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/3683"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -70.6424804,
+		          -33.4381831
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1102",
+		        "lux": "115",
+		        "ciudad": "Tyngsborough",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/1102"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -71.49042646875,
+		          42.6352219226946
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3675",
+		        "lux": "2789",
+		        "ciudad": "Santiago",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/3675"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -70.6424975395203,
+		          -33.4395037710933
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3685",
+		        "lux": "119",
+		        "ciudad": "Santiago",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/3685"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -70.6411604,
+		          -33.4382678
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "4235",
+		        "lux": "27",
+		        "ciudad": "Windhoek",
+		        "codigo_pais": "NA",
+		        "json": "https://api.smartcitizen.me/v0/devices/4235"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          17.0751657,
+		          -22.5666359
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
 		        "id": "4140",
-		        "avgLux": "16",
-		        "url": "https://api.smartcitizen.me/v0/devices/4140"
+		        "lux": "16",
+		        "ciudad": "Antofagasta",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/4140"
 		      },
 		      "geometry": {
 		        "type": "Point",
@@ -524,12 +556,487 @@
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 1",
-		        "pais": "Chile",
+		        "id": "3511",
+		        "lux": "452",
+		        "ciudad": "Errenteria",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/3511"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -1.89916491508484,
+		          43.3117751533744
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3107",
+		        "lux": "15",
+		        "ciudad": "București",
+		        "codigo_pais": "RO",
+		        "json": "https://api.smartcitizen.me/v0/devices/3107"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          26.1025384,
+		          44.4267674
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3130",
+		        "lux": "30",
+		        "ciudad": "Newcastle upon Tyne",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/3130"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -1.685734,
+		          54.9891617
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3591",
+		        "lux": "298",
+		        "ciudad": "London",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/3591"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -0.1050761,
+		          51.5239759
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2177",
+		        "lux": "4540",
+		        "ciudad": "Houston",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/2177"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -95.3698028,
+		          29.7604267
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3302",
+		        "lux": "1473",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/3302"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.194564,
+		          41.3965519
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3421",
+		        "lux": "244",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/3421"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.1944974,
+		          41.3965858
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3587",
+		        "lux": "151",
+		        "ciudad": "London",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/3587"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -0.1050995,
+		          51.5239672
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3163",
+		        "lux": "1189",
+		        "ciudad": "Gent",
+		        "codigo_pais": "BE",
+		        "json": "https://api.smartcitizen.me/v0/devices/3163"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          3.724365234375,
+		          51.0274683718923
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3609",
+		        "lux": "174",
+		        "ciudad": "Sarajevo",
+		        "codigo_pais": "BA",
+		        "json": "https://api.smartcitizen.me/v0/devices/3609"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          18.4022602,
+		          43.8509323
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2304",
+		        "lux": "4262",
+		        "ciudad": "Quito",
+		        "codigo_pais": "EC",
+		        "json": "https://api.smartcitizen.me/v0/devices/2304"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -78.502534031868,
+		          -0.20975900523896
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1290",
+		        "lux": "321",
+		        "ciudad": "Fair Oaks",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/1290"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -121.2721718,
+		          38.6446264
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3117",
+		        "lux": "202",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/3117"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.19635048881173,
+		          41.3987590917448
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "4106",
+		        "lux": "3618",
 		        "ciudad": "Antofagasta",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/4106"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -70.3796946,
+		          -23.6323908
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3738",
+		        "lux": "548",
+		        "ciudad": "Écully",
+		        "codigo_pais": "FR",
+		        "json": "https://api.smartcitizen.me/v0/devices/3738"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.7649002,
+		          45.7849734
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "4188",
+		        "lux": "1070",
+		        "ciudad": "Newcastle upon Tyne",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/4188"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -1.6097067,
+		          54.9801369
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3663",
+		        "lux": "183",
+		        "ciudad": "Antofagasta",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/3663"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -70.4207807779312,
+		          -23.7023354228104
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "4169",
+		        "lux": "284",
+		        "ciudad": "Manhattan",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/4169"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -96.5716694,
+		          39.1836082
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1387",
+		        "lux": "69",
+		        "ciudad": "Cambridge",
+		        "codigo_pais": "CA",
+		        "json": "https://api.smartcitizen.me/v0/devices/1387"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -80.3979869622803,
+		          43.3860474430208
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "4205",
+		        "lux": "765",
+		        "ciudad": "Écully",
+		        "codigo_pais": "FR",
+		        "json": "https://api.smartcitizen.me/v0/devices/4205"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.7649091,
+		          45.7849966
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "4206",
+		        "lux": "915",
+		        "ciudad": "Écully",
+		        "codigo_pais": "FR",
+		        "json": "https://api.smartcitizen.me/v0/devices/4206"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.764852,
+		          45.7849846
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "4135",
+		        "lux": "511",
+		        "ciudad": "Antofagasta",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/4135"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -70.4024431,
+		          -23.6564784
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1834",
+		        "lux": "38",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/1834"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.18158543109894,
+		          41.3985880721073
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3264",
+		        "lux": "5",
+		        "ciudad": "Centurion",
+		        "codigo_pais": "ZA",
+		        "json": "https://api.smartcitizen.me/v0/devices/3264"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          28.2219886779785,
+		          -25.9123501973716
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3168",
+		        "lux": "281",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/3168"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.19576358795166,
+		          41.3987228758591
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "4138",
+		        "lux": "5",
+		        "ciudad": "Olesa de Montserrat",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/4138"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          1.90428256988525,
+		          41.5470343780346
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2579",
+		        "lux": "14",
+		        "ciudad": "Kent",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/2579"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -122.2348431,
+		          47.3809335
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2681",
+		        "lux": "82",
+		        "ciudad": "Mechelen",
+		        "codigo_pais": "BE",
+		        "json": "https://api.smartcitizen.me/v0/devices/2681"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.47753620000003,
+		          51.0258761
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
 		        "id": "4103",
-		        "avgLux": "1",
-		        "url": "https://api.smartcitizen.me/v0/devices/4103"
+		        "lux": "1",
+		        "ciudad": "Antofagasta",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/4103"
 		      },
 		      "geometry": {
 		        "type": "Point",
@@ -542,12 +1049,2119 @@
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 10",
-		        "pais": "Chile",
+		        "id": "3053",
+		        "lux": "249",
+		        "ciudad": "Toronto",
+		        "codigo_pais": "CA",
+		        "json": "https://api.smartcitizen.me/v0/devices/3053"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -79.5490934,
+		          43.7026058
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2523",
+		        "lux": "11",
+		        "ciudad": "Konak",
+		        "codigo_pais": "TR",
+		        "json": "https://api.smartcitizen.me/v0/devices/2523"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          27.142826,
+		          38.423734
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3296",
+		        "lux": "230",
+		        "ciudad": "Wien",
+		        "codigo_pais": "AT",
+		        "json": "https://api.smartcitizen.me/v0/devices/3296"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          16.3608415977136,
+		          48.1910288447998
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "863",
+		        "lux": "445",
+		        "ciudad": "Shannon",
+		        "codigo_pais": "IE",
+		        "json": "https://api.smartcitizen.me/v0/devices/863"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -8.90287399291992,
+		          52.7062431397092
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3015",
+		        "lux": "153",
+		        "ciudad": "London",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/3015"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -0.082161,
+		          51.5044772
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3536",
+		        "lux": "32",
+		        "ciudad": "Lopik",
+		        "codigo_pais": "NL",
+		        "json": "https://api.smartcitizen.me/v0/devices/3536"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.92230415344238,
+		          51.9707245060588
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2197",
+		        "lux": "250",
+		        "ciudad": "Steyr",
+		        "codigo_pais": "AT",
+		        "json": "https://api.smartcitizen.me/v0/devices/2197"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          14.438429,
+		          48.052634
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2611",
+		        "lux": "3",
+		        "ciudad": "Hyderabad",
+		        "codigo_pais": "IN",
+		        "json": "https://api.smartcitizen.me/v0/devices/2611"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          78.374514,
+		          17.360504
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3019",
+		        "lux": "5",
 		        "ciudad": "Antofagasta",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/3019"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -70.3956055641174,
+		          -23.6457428853211
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3341",
+		        "lux": "1313",
+		        "ciudad": "Leipzig",
+		        "codigo_pais": "DE",
+		        "json": "https://api.smartcitizen.me/v0/devices/3341"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          12.4296569824219,
+		          51.3522727206578
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3055",
+		        "lux": "2815",
+		        "ciudad": "Berlin",
+		        "codigo_pais": "DE",
+		        "json": "https://api.smartcitizen.me/v0/devices/3055"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          13.3008554,
+		          52.4922149
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2427",
+		        "lux": "2036",
+		        "ciudad": "Hull",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/2427"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -0.340321700000004,
+		          53.7559409
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3289",
+		        "lux": "203",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/3289"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.19415208414976,
+		          41.3966678387772
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3300",
+		        "lux": "15",
+		        "ciudad": "Gurgaon",
+		        "codigo_pais": "IN",
+		        "json": "https://api.smartcitizen.me/v0/devices/3300"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          77.0531908,
+		          28.4275789
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1028",
+		        "lux": "226",
+		        "ciudad": "Amsterdam",
+		        "codigo_pais": "NL",
+		        "json": "https://api.smartcitizen.me/v0/devices/1028"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.83743260000006,
+		          52.3757688
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2438",
+		        "lux": "24",
+		        "ciudad": "Manchester",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/2438"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -2.28589769999996,
+		          53.4404509
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2219",
+		        "lux": "19",
+		        "ciudad": "Wake Forest",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/2219"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -78.5097228,
+		          35.9798734
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3291",
+		        "lux": "1413",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/3291"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.1943896,
+		          41.3965938
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2236",
+		        "lux": "34",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/2236"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.18078500000001,
+		          41.3865491
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3007",
+		        "lux": "4",
+		        "ciudad": "Vught",
+		        "codigo_pais": "NL",
+		        "json": "https://api.smartcitizen.me/v0/devices/3007"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          5.30150413513184,
+		          51.6359059408085
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2253",
+		        "lux": "50",
+		        "ciudad": "Nancy",
+		        "codigo_pais": "FR",
+		        "json": "https://api.smartcitizen.me/v0/devices/2253"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          6.18441699999994,
+		          48.692054
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1933",
+		        "lux": "668",
+		        "ciudad": "Madrid",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/1933"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -3.73101711273193,
+		          40.4514211768421
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2365",
+		        "lux": "89",
+		        "ciudad": "Liverpool",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/2365"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -2.90677410000001,
+		          53.3891788
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1958",
+		        "lux": "340",
+		        "ciudad": "London",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/1958"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          0.005531499999961,
+		          51.5015709
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "483",
+		        "lux": "34",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/483"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.17331309999997,
+		          41.3850477
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3376",
+		        "lux": "992",
+		        "ciudad": "San Diego",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/3376"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -117.243390083313,
+		          32.8849571012197
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2448",
+		        "lux": "7",
+		        "ciudad": "Hyderabad",
+		        "codigo_pais": "IN",
+		        "json": "https://api.smartcitizen.me/v0/devices/2448"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          78.3105039596558,
+		          17.4732392862968
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3146",
+		        "lux": "92",
+		        "ciudad": "Cambridge",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/3146"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -71.0866284370422,
+		          42.3611283919176
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2593",
+		        "lux": "2",
+		        "ciudad": "Antibes",
+		        "codigo_pais": "FR",
+		        "json": "https://api.smartcitizen.me/v0/devices/2593"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          7.12510199999997,
+		          43.580418
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1336",
+		        "lux": "520",
+		        "ciudad": "Glasgow",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/1336"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -4.29149018968816,
+		          55.8741348754198
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3433",
+		        "lux": "1681",
+		        "ciudad": "Berlin",
+		        "codigo_pais": "DE",
+		        "json": "https://api.smartcitizen.me/v0/devices/3433"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          13.448729941373,
+		          52.4982005001426
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1352",
+		        "lux": "67",
+		        "ciudad": "Grenoble",
+		        "codigo_pais": "FR",
+		        "json": "https://api.smartcitizen.me/v0/devices/1352"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          5.72682299999997,
+		          45.192144
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3089",
+		        "lux": "110",
+		        "ciudad": "London",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/3089"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -0.0052258,
+		          51.45679
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1548",
+		        "lux": "88",
+		        "ciudad": "Amsterdam",
+		        "codigo_pais": "NL",
+		        "json": "https://api.smartcitizen.me/v0/devices/1548"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.89590129999999,
+		          52.3429896
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1618",
+		        "lux": "112",
+		        "ciudad": "Scarning",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/1618"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          0.885390000000029,
+		          52.6724249
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3411",
+		        "lux": "302",
+		        "ciudad": "Ixelles",
+		        "codigo_pais": "BE",
+		        "json": "https://api.smartcitizen.me/v0/devices/3411"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.3744621,
+		          50.8388784
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1462",
+		        "lux": "5",
+		        "ciudad": "Helsingfors",
+		        "codigo_pais": "FI",
+		        "json": "https://api.smartcitizen.me/v0/devices/1462"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          24.9630293,
+		          60.2254064
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2056",
+		        "lux": "1377",
+		        "ciudad": "Madrid",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/2056"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -3.72814178466797,
+		          40.4430278800818
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "827",
+		        "lux": "3000",
+		        "ciudad": "Berlin",
+		        "codigo_pais": "DE",
+		        "json": "https://api.smartcitizen.me/v0/devices/827"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          13.3717566,
+		          52.5606496
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2293",
+		        "lux": "479",
+		        "ciudad": "Oulu",
+		        "codigo_pais": "FI",
+		        "json": "https://api.smartcitizen.me/v0/devices/2293"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          25.4714526,
+		          65.0126148
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "922",
+		        "lux": "585",
+		        "ciudad": "Baltimore",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/922"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -76.6096193038605,
+		          39.2682437700082
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2711",
+		        "lux": "384",
+		        "ciudad": "Antofagasta",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/2711"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -70.4379415512085,
+		          -23.7273100895196
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "728",
+		        "lux": "37",
+		        "ciudad": "Düsseldorf",
+		        "codigo_pais": "DE",
+		        "json": "https://api.smartcitizen.me/v0/devices/728"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          6.90957100000003,
+		          51.1373248
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "761",
+		        "lux": "1597",
+		        "ciudad": "Charlotte",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/761"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -80.795576498584,
+		          35.1062981402204
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1168",
+		        "lux": "596",
+		        "ciudad": "Aarau",
+		        "codigo_pais": "CH",
+		        "json": "https://api.smartcitizen.me/v0/devices/1168"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          8.0440969,
+		          47.3968622
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1761",
+		        "lux": "205",
+		        "ciudad": "Germantown",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/1761"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -77.2663983320978,
+		          39.1529768625514
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1558",
+		        "lux": "40",
+		        "ciudad": "Bač",
+		        "codigo_pais": "RS",
+		        "json": "https://api.smartcitizen.me/v0/devices/1558"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          19.2171283,
+		          45.3493053
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1409",
+		        "lux": "2491",
+		        "ciudad": "Glasgow",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/1409"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -4.29136831947325,
+		          55.8749377506149
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2468",
+		        "lux": "19",
+		        "ciudad": "Windhoek",
+		        "codigo_pais": "NA",
+		        "json": "https://api.smartcitizen.me/v0/devices/2468"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          17.0813423395157,
+		          -22.5921510927466
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3025",
+		        "lux": "351",
+		        "ciudad": "Toronto",
+		        "codigo_pais": "CA",
+		        "json": "https://api.smartcitizen.me/v0/devices/3025"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -79.5598185,
+		          43.7028574
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1778",
+		        "lux": "14",
+		        "ciudad": "San Jose",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/1778"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -121.8949555,
+		          37.3393857
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2310",
+		        "lux": "186",
+		        "ciudad": "Beijing",
+		        "codigo_pais": "CN",
+		        "json": "https://api.smartcitizen.me/v0/devices/2310"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          116.470609,
+		          39.916802
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "948",
+		        "lux": "11",
+		        "ciudad": "Amsterdam",
+		        "codigo_pais": "NL",
+		        "json": "https://api.smartcitizen.me/v0/devices/948"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.9233203,
+		          52.3425304
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1429",
+		        "lux": "6",
+		        "ciudad": "Plovdiv",
+		        "codigo_pais": "BG",
+		        "json": "https://api.smartcitizen.me/v0/devices/1429"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          24.7376489639282,
+		          42.1299460625034
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2245",
+		        "lux": "1",
+		        "ciudad": "Jaipur",
+		        "codigo_pais": "IN",
+		        "json": "https://api.smartcitizen.me/v0/devices/2245"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          75.7872709000001,
+		          26.9124336
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2381",
+		        "lux": "1",
+		        "ciudad": "Pottendorf Gemeinde",
+		        "codigo_pais": "AT",
+		        "json": "https://api.smartcitizen.me/v0/devices/2381"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          16.3881077999999,
+		          47.911426
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1333",
+		        "lux": "107",
+		        "ciudad": "Doha",
+		        "codigo_pais": "QA",
+		        "json": "https://api.smartcitizen.me/v0/devices/1333"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          51.533333,
+		          25.286667
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2141",
+		        "lux": "1752",
+		        "ciudad": "Amsterdam",
+		        "codigo_pais": "NL",
+		        "json": "https://api.smartcitizen.me/v0/devices/2141"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.80150818824768,
+		          52.3630349368761
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1938",
+		        "lux": "8",
+		        "ciudad": "Forno Alpi Graie",
+		        "codigo_pais": "IT",
+		        "json": "https://api.smartcitizen.me/v0/devices/1938"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          7.2225022315979,
+		          45.3640755045513
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1257",
+		        "lux": "1",
+		        "ciudad": "Manchester",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/1257"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -2.23917069999993,
+		          53.4878622
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1684",
+		        "lux": "458",
+		        "ciudad": "Cambridge",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/1684"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -71.0900971,
+		          42.3628741
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1881",
+		        "lux": "89",
+		        "ciudad": "Fuzhou Shi",
+		        "codigo_pais": "CN",
+		        "json": "https://api.smartcitizen.me/v0/devices/1881"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          119.262084960938,
+		          26.0496888468454
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1390",
+		        "lux": "250",
+		        "ciudad": "Montréal",
+		        "codigo_pais": "CA",
+		        "json": "https://api.smartcitizen.me/v0/devices/1390"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -73.7019577,
+		          45.5346423
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1404",
+		        "lux": "652",
+		        "ciudad": "Glasgow",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/1404"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -4.28848940738184,
+		          55.8711354678596
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "813",
+		        "lux": "75",
+		        "ciudad": "Montgesty",
+		        "codigo_pais": "FR",
+		        "json": "https://api.smartcitizen.me/v0/devices/813"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          1.30632698535919,
+		          44.5791658365289
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2400",
+		        "lux": "378",
+		        "ciudad": "London",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/2400"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -0.14200500000004,
+		          51.5473039
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2469",
+		        "lux": "186",
+		        "ciudad": "Preston",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/2469"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -2.710262,
+		          53.76307
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1410",
+		        "lux": "90",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/1410"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.17340349999995,
+		          41.3850639
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1236",
+		        "lux": "12",
+		        "ciudad": "Albuquerque",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/1236"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -106.519763066254,
+		          35.0440604641622
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "949",
+		        "lux": "4540",
+		        "ciudad": "Amsterdam",
+		        "codigo_pais": "NL",
+		        "json": "https://api.smartcitizen.me/v0/devices/949"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.90105889999995,
+		          52.3867032
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2431",
+		        "lux": "179",
+		        "ciudad": "Amorebieta",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/2431"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -2.73305329999994,
+		          43.2204714
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1411",
+		        "lux": "75",
+		        "ciudad": "Barcelona",
+		        "codigo_pais": "ES",
+		        "json": "https://api.smartcitizen.me/v0/devices/1411"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          2.18814399999997,
+		          41.402498
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2445",
+		        "lux": "1006",
+		        "ciudad": "North Yorkshire",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/2445"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -1.10970099999997,
+		          54.199422
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2520",
+		        "lux": "12",
+		        "ciudad": "Larzano-castello",
+		        "codigo_pais": "IT",
+		        "json": "https://api.smartcitizen.me/v0/devices/2520"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          9.63607030000003,
+		          44.9560133
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1672",
+		        "lux": "15",
+		        "ciudad": "Ibadan",
+		        "codigo_pais": "NG",
+		        "json": "https://api.smartcitizen.me/v0/devices/1672"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          3.90137400000003,
+		          7.400394
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1226",
+		        "lux": "520",
+		        "ciudad": "Ciudad López Mateos",
+		        "codigo_pais": "MX",
+		        "json": "https://api.smartcitizen.me/v0/devices/1226"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -99.2674713,
+		          19.5562275
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2124",
+		        "lux": "1777",
+		        "ciudad": "Torrevecchia Pia",
+		        "codigo_pais": "IT",
+		        "json": "https://api.smartcitizen.me/v0/devices/2124"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          9.29668530000004,
+		          45.2833267
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1473",
+		        "lux": "50",
+		        "ciudad": "Port Jefferson Station",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/1473"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -73.0473284,
+		          40.9253764
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "874",
+		        "lux": "551",
+		        "ciudad": "Trondheim",
+		        "codigo_pais": "NO",
+		        "json": "https://api.smartcitizen.me/v0/devices/874"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          10.3569167000001,
+		          63.4265843
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2035",
+		        "lux": "63",
+		        "ciudad": "Wien",
+		        "codigo_pais": "AT",
+		        "json": "https://api.smartcitizen.me/v0/devices/2035"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          16.4001009999999,
+		          48.228136
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "699",
+		        "lux": "5",
+		        "ciudad": "San Francisco",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/699"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -122.4194155,
+		          37.7749295
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1342",
+		        "lux": "479",
+		        "ciudad": "Glasgow",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/1342"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -4.29144342132568,
+		          55.874761958758
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2561",
+		        "lux": "6533",
+		        "ciudad": "Prosper",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/2561"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -96.80111,
+		          33.2362278
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2436",
+		        "lux": "646",
+		        "ciudad": "Brașov",
+		        "codigo_pais": "RO",
+		        "json": "https://api.smartcitizen.me/v0/devices/2436"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          25.5776171,
+		          45.6370555
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1664",
+		        "lux": "589",
+		        "ciudad": "Washington",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/1664"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -77.0510595,
+		          38.9015411
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "958",
+		        "lux": "537",
+		        "ciudad": "Amsterdam",
+		        "codigo_pais": "NL",
+		        "json": "https://api.smartcitizen.me/v0/devices/958"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.86936919999994,
+		          52.3633749
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1986",
+		        "lux": "955",
+		        "ciudad": "Cleveland",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/1986"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -81.6943605,
+		          41.49932
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "539",
+		        "lux": "397",
+		        "ciudad": "Belmont",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/539"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -122.2758008,
+		          37.5202145
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1264",
+		        "lux": "90",
+		        "ciudad": "Manchester",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/1264"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -2.23851500000001,
+		          53.470123
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "887",
+		        "lux": "117",
+		        "ciudad": "Manhattan Beach",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/887"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -118.4109089,
+		          33.8847361
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1688",
+		        "lux": "6390",
+		        "ciudad": "Glasgow",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/1688"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -4.30707150000001,
+		          55.8383358
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "830",
+		        "lux": "2",
+		        "ciudad": "Bargemon",
+		        "codigo_pais": "FR",
+		        "json": "https://api.smartcitizen.me/v0/devices/830"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          6.551421,
+		          43.619399
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "940",
+		        "lux": "11",
+		        "ciudad": "Amsterdam",
+		        "codigo_pais": "NL",
+		        "json": "https://api.smartcitizen.me/v0/devices/940"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.8059839,
+		          52.3536785
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1001",
+		        "lux": "4540",
+		        "ciudad": "Amsterdam",
+		        "codigo_pais": "NL",
+		        "json": "https://api.smartcitizen.me/v0/devices/1001"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.92377499999998,
+		          52.349614
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1064",
+		        "lux": "12",
+		        "ciudad": "Croydon",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/1064"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -0.086308314285272,
+		          51.3781292896944
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1033",
+		        "lux": "31",
+		        "ciudad": "Moskva",
+		        "codigo_pais": "RU",
+		        "json": "https://api.smartcitizen.me/v0/devices/1033"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          37.5292449999999,
+		          55.637751
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1383",
+		        "lux": "27",
+		        "ciudad": "Dubai",
+		        "codigo_pais": "AE",
+		        "json": "https://api.smartcitizen.me/v0/devices/1383"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          55.288806,
+		          25.227185
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1010",
+		        "lux": "875",
+		        "ciudad": "Berlin",
+		        "codigo_pais": "DE",
+		        "json": "https://api.smartcitizen.me/v0/devices/1010"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          13.3004466753387,
+		          52.4468423942258
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1811",
+		        "lux": "630",
+		        "ciudad": "Singapore",
+		        "codigo_pais": "SG",
+		        "json": "https://api.smartcitizen.me/v0/devices/1811"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          103.848772,
+		          1.379977
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1865",
+		        "lux": "221",
+		        "ciudad": "Singapore",
+		        "codigo_pais": "SG",
+		        "json": "https://api.smartcitizen.me/v0/devices/1865"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          103.848772,
+		          1.379977
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2252",
+		        "lux": "76",
+		        "ciudad": "Lugano",
+		        "codigo_pais": "CH",
+		        "json": "https://api.smartcitizen.me/v0/devices/2252"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          8.95231209999997,
+		          46.0065117
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "707",
+		        "lux": "89",
+		        "ciudad": "Bad Schussenried",
+		        "codigo_pais": "DE",
+		        "json": "https://api.smartcitizen.me/v0/devices/707"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          9.64714819999995,
+		          47.9791247
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1913",
+		        "lux": "118",
+		        "ciudad": "Pietarsaari",
+		        "codigo_pais": "FI",
+		        "json": "https://api.smartcitizen.me/v0/devices/1913"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          22.6760494709015,
+		          63.6770330801284
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "540",
+		        "lux": "4",
+		        "ciudad": "Oro Valley",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/540"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -110.995026703918,
+		          32.4100026502534
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2295",
+		        "lux": "829",
+		        "ciudad": "Oulu",
+		        "codigo_pais": "FI",
+		        "json": "https://api.smartcitizen.me/v0/devices/2295"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          25.4714526,
+		          65.0126148
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2185",
+		        "lux": "193",
+		        "ciudad": "Oshawa",
+		        "codigo_pais": "CA",
+		        "json": "https://api.smartcitizen.me/v0/devices/2185"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -78.8657912,
+		          43.8970929
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1118",
+		        "lux": "35",
+		        "ciudad": "Englewood",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/1118"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -104.989647975146,
+		          39.6461048178293
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2018",
+		        "lux": "5707",
+		        "ciudad": "Yerevan",
+		        "codigo_pais": "AM",
+		        "json": "https://api.smartcitizen.me/v0/devices/2018"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          44.514981508255,
+		          40.1818488309859
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2240",
+		        "lux": "4540",
+		        "ciudad": "Chicago",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/2240"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -87.6161696,
+		          41.8925085
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2306",
+		        "lux": "173",
+		        "ciudad": "Beijing",
+		        "codigo_pais": "CN",
+		        "json": "https://api.smartcitizen.me/v0/devices/2306"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          116.4779215,
+		          39.9194316
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1493",
+		        "lux": "103",
+		        "ciudad": "Coventry",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/1493"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -1.51969299999996,
+		          52.406822
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1597",
+		        "lux": "4824",
+		        "ciudad": "Lugano",
+		        "codigo_pais": "CH",
+		        "json": "https://api.smartcitizen.me/v0/devices/1597"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          8.96559439904171,
+		          46.0062508794339
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2452",
+		        "lux": "111",
+		        "ciudad": "London",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/2452"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -0.117513000000031,
+		          51.511433
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2170",
+		        "lux": "4166",
+		        "ciudad": "Auckland",
+		        "codigo_pais": "NZ",
+		        "json": "https://api.smartcitizen.me/v0/devices/2170"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          174.7811534,
+		          -36.9536846
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1809",
+		        "lux": "1862",
+		        "ciudad": "Amsterdam",
+		        "codigo_pais": "NL",
+		        "json": "https://api.smartcitizen.me/v0/devices/1809"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.8872063,
+		          52.3709288
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "2359",
+		        "lux": "120",
+		        "ciudad": "London",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/2359"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -0.131980500000054,
+		          51.5217938
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1063",
+		        "lux": "239",
+		        "ciudad": "Amsterdam",
+		        "codigo_pais": "NL",
+		        "json": "https://api.smartcitizen.me/v0/devices/1063"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.8758626,
+		          52.3540459
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1673",
+		        "lux": "4540",
+		        "ciudad": "Wien",
+		        "codigo_pais": "AT",
+		        "json": "https://api.smartcitizen.me/v0/devices/1673"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          16.3460305,
+		          48.2027879
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1256",
+		        "lux": "9",
+		        "ciudad": "Stretford",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/1256"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -2.26437468715665,
+		          53.4574081407928
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "1202",
+		        "lux": "1",
+		        "ciudad": "Amsterdam",
+		        "codigo_pais": "NL",
+		        "json": "https://api.smartcitizen.me/v0/devices/1202"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          4.89516789999993,
+		          52.3702157
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3189",
+		        "lux": "4540",
+		        "ciudad": "Windhoek",
+		        "codigo_pais": "NA",
+		        "json": "https://api.smartcitizen.me/v0/devices/3189"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          17.0751322,
+		          -22.5662938
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "4173",
+		        "lux": "55",
+		        "ciudad": "Manhattan",
+		        "codigo_pais": "US",
+		        "json": "https://api.smartcitizen.me/v0/devices/4173"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -96.5716694,
+		          39.1836082
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3931",
+		        "lux": "253",
+		        "ciudad": "Kerkira",
+		        "codigo_pais": "GR",
+		        "json": "https://api.smartcitizen.me/v0/devices/3931"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          19.8980739,
+		          39.6236741
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
+		        "id": "3593",
+		        "lux": "86",
+		        "ciudad": "London",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/3593"
+		      },
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [
+		          -0.1050561,
+		          51.5239989
+		        ]
+		      }
+		    },
+		    {
+		      "type": "Feature",
+		      "properties": {
 		        "id": "4105",
-		        "avgLux": "10",
-		        "url": "https://api.smartcitizen.me/v0/devices/4105"
+		        "lux": "10",
+		        "ciudad": "Antofagasta",
+		        "codigo_pais": "CL",
+		        "json": "https://api.smartcitizen.me/v0/devices/4105"
 		      },
 		      "geometry": {
 		        "type": "Point",
@@ -560,270 +3174,34 @@
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 0",
-		        "pais": "Puerto Rico",
-		        "ciudad": "Juncos",
-		        "id": "3190",
-		        "avgLux": "0",
-		        "url": "https://api.smartcitizen.me/v0/devices/3190"
+		        "id": "3142",
+		        "lux": "4540",
+		        "ciudad": "Gateshead",
+		        "codigo_pais": "GB",
+		        "json": "https://api.smartcitizen.me/v0/devices/3142"
 		      },
 		      "geometry": {
 		        "type": "Point",
 		        "coordinates": [
-		          -65.8635628223419,
-		          18.2796845086582
+		          -1.5965875,
+		          54.9683376
 		        ]
 		      }
 		    },
 		    {
 		      "type": "Feature",
 		      "properties": {
-		        "popupContent": "lux 283",
-		        "pais": "Brazil",
-		        "ciudad": "Belém",
-		        "id": "1388",
-		        "avgLux": "283",
-		        "url": "https://api.smartcitizen.me/v0/devices/1388"
+		        "id": "1374",
+		        "lux": "45",
+		        "ciudad": "Dubai",
+		        "codigo_pais": "AE",
+		        "json": "https://api.smartcitizen.me/v0/devices/1374"
 		      },
 		      "geometry": {
 		        "type": "Point",
 		        "coordinates": [
-		          -48.4901799,
-		          -1.4557549
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 6",
-		        "pais": "Costa Rica",
-		        "ciudad": "San José",
-		        "id": "1365",
-		        "avgLux": "6",
-		        "url": "https://api.smartcitizen.me/v0/devices/1365"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -84.0907246,
-		          9.9280694
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 32",
-		        "pais": "Colombia",
-		        "ciudad": "Popayán",
-		        "id": "2314",
-		        "avgLux": "32",
-		        "url": "https://api.smartcitizen.me/v0/devices/2314"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -76.605721,
-		          2.441304
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 403",
-		        "pais": "Colombia",
-		        "ciudad": "Popayán",
-		        "id": "2392",
-		        "avgLux": "403",
-		        "url": "https://api.smartcitizen.me/v0/devices/2392"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -76.605721,
-		          2.441304
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 5",
-		        "pais": "Colombia",
-		        "ciudad": "Popayán",
-		        "id": "2407",
-		        "avgLux": "5",
-		        "url": "https://api.smartcitizen.me/v0/devices/2407"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -76.605721,
-		          2.441304
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 64",
-		        "pais": "Brazil",
-		        "ciudad": "Rio de Janeiro",
-		        "id": "1243",
-		        "avgLux": "64",
-		        "url": "https://api.smartcitizen.me/v0/devices/1243"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -43.2007101,
-		          -22.9133954
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 116",
-		        "pais": "Argentina",
-		        "ciudad": "Buenos Aires",
-		        "id": "1050",
-		        "avgLux": "116",
-		        "url": "https://api.smartcitizen.me/v0/devices/1050"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -58.385191,
-		          -34.5921077
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 34.5",
-		        "pais": "Mexico",
-		        "ciudad": "Ciudad de México",
-		        "id": "3208",
-		        "avgLux": "34.5",
-		        "url": "https://api.smartcitizen.me/v0/devices/3208"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -99.1760838031769,
-		          19.3251762741318
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 2",
-		        "pais": "Argentina",
-		        "ciudad": "Buenos Aires",
-		        "id": "1380",
-		        "avgLux": "2",
-		        "url": "https://api.smartcitizen.me/v0/devices/1380"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -58.3749553,
-		          -34.6172813
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 45",
-		        "pais": "Colombia",
-		        "ciudad": "Popayán",
-		        "id": "2395",
-		        "avgLux": "45",
-		        "url": "https://api.smartcitizen.me/v0/devices/2395"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -76.605721,
-		          2.441304
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 260",
-		        "pais": "Colombia",
-		        "ciudad": "Popayán",
-		        "id": "2347",
-		        "avgLux": "260",
-		        "url": "https://api.smartcitizen.me/v0/devices/2347"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -76.5884399414062,
-		          2.4534925411896
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 17",
-		        "pais": "Colombia",
-		        "ciudad": "Cali",
-		        "id": "4202",
-		        "avgLux": "17",
-		        "url": "https://api.smartcitizen.me/v0/devices/4202"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -76.5005278587341,
-		          3.44940242851821
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 50",
-		        "pais": "Mexico",
-		        "ciudad": "Ciudad de México",
-		        "id": "2046",
-		        "avgLux": "50",
-		        "url": "https://api.smartcitizen.me/v0/devices/2046"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -99.1561883,
-		          19.3437444
-		        ]
-		      }
-		    },
-		    {
-		      "type": "Feature",
-		      "properties": {
-		        "popupContent": "lux 66",
-		        "pais": "Colombia",
-		        "ciudad": "Cali",
-		        "id": "3394",
-		        "avgLux": "66",
-		        "url": "https://api.smartcitizen.me/v0/devices/3394"
-		      },
-		      "geometry": {
-		        "type": "Point",
-		        "coordinates": [
-		          -76.5112911,
-		          3.4508339
+		          55.2986741065979,
+		          25.1871462860822
 		        ]
 		      }
 		    }
@@ -831,18 +3209,20 @@
 		}
 
 
+
 		L.geoJSON(geojsonFeature, {
 		    onEachFeature: onEachFeature
 		}).addTo(map);
 
+
+
 	</script>
+
 	<div id="text">
 		<h1>Resultados</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet mauris a mauris semper viverra. Vivamus facilisis laoreet viverra. Nullam ac leo non purus venenatis varius at et diam. Morbi id ante sem. Vestibulum id viverra augue. Donec ipsum nisi, scelerisque a nisl vitae, dignissim lobortis magna. Aenean ut orci faucibus, eleifend enim id, sagittis dui. Quisque ac arcu purus. Suspendisse accumsan felis euismod massa consectetur fermentum. Curabitur ultricies turpis finibus eros ultrices, quis dapibus dolor fermentum. In vulputate vehicula quam vitae placerat.</p>
 		<p>Nam congue nibh eu felis efficitur fermentum ac at diam. Duis sollicitudin tincidunt ultrices. Sed odio eros, euismod vel ex et, porttitor volutpat nisi. Vestibulum rhoncus neque eu lorem semper, eget fringilla nisi accumsan. Pellentesque et ultrices odio, et varius augue. Proin eget dolor ornare, fringilla arcu eget, posuere magna. Phasellus laoreet lectus vel bibendum condimentum. Vestibulum vitae lacus eu augue cursus bibendum eu tincidunt quam. Vestibulum ornare fermentum erat, sed tincidunt arcu ultricies sed.</p>
-		<p>Proin et pulvinar leo. Vivamus eget tortor sit amet erat ornare euismod at in diam. Duis facilisis consectetur eros, nec placerat turpis finibus nec. Aenean vel ante sed enim vehicula vehicula a quis turpis. In lobortis purus sed aliquam blandit. Proin fermentum tortor quis ex ultrices, eu dapibus mi lacinia. Phasellus egestas turpis metus, vel tincidunt lacus mattis nec. Proin euismod pretium velit ac suscipit. Pellentesque at congue erat. Vestibulum sed ex et est hendrerit faucibus. Nulla auctor blandit quam nec placerat. Nullam sit amet augue non enim interdum bibendum. Suspendisse tempor eget ante vitae pretium. Nunc ac lorem mauris. Maecenas dapibus pretium bibendum. Praesent tortor eros, dapibus eget urna et, convallis molestie tellus.</p>
-		<p>Phasellus laoreet erat at neque scelerisque accumsan. Sed euismod rutrum sem vitae fermentum. Duis quis augue elit. Nulla fermentum imperdiet vestibulum. Aenean viverra dui eget nisl vehicula, venenatis lobortis lorem finibus. Nullam eget luctus mi. Sed tempor mollis nisl. Maecenas rutrum aliquet arcu, a pellentesque mi scelerisque at. Quisque ac volutpat ligula. Suspendisse fringilla augue in lacus rutrum vehicula. Curabitur ac quam nulla. Morbi et rhoncus lectus. Cras vulputate libero et ligula aliquet venenatis. Maecenas quis ante posuere, rutrum erat sed, laoreet arcu.</p>
-		<p>Donec venenatis bibendum erat non sagittis. Donec tempus tincidunt risus, nec iaculis ex sollicitudin non. Nam efficitur, felis nec lobortis ornare, ante lacus vehicula ipsum, vitae volutpat quam leo et elit. Nullam ultrices, leo ac facilisis vestibulum, sem ipsum blandit quam, non convallis massa sem nec arcu. Integer condimentum leo sed quam euismod lacinia. Aliquam erat volutpat. Nam aliquet mollis vehicula. Aliquam purus mi, semper in consequat ut, elementum sed ipsum. Suspendisse euismod congue aliquam. In mollis quam in velit iaculis vehicula. In et consequat mi, convallis sodales quam.</p>
+		<img src="img/boxes.png">
 	</div>
 
 </body>

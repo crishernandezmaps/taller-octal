@@ -3,11 +3,26 @@
 ## Presentación
 El siguiente taller busca la realización de un ejercicio práctico de ciencia ciudadana, enfocado al conocimiento del impacto de la polución lumínica en Chile e internacionalmente.
 
-CSV to GeoJson: http://www.convertcsv.com/csv-to-geojson.htm
-npm install -g csv2geojson ::: https://github.com/mapbox/csv2geojson
+0. Instalar las herramientas necesarias 'npm install'.
+1. Descargar en formato JSON los datos de todos los sensores pertenecientes a la red https://api.smartcitizen.me/v0/devices/world_map
+2. Inspeccionar los datos.
+3. Elegir tres ciudades para realizar una comparación.
+4. Rellenar array 'ciudades' en el script.
+5. Ejecutar el script utilizando node.js 'node fadeu.js'.
+6. Acceder a la carpeta datos utilizando terminal/command prompt 'cd data'.
+7. Inspeccionar los datos que tenemos en dicho directorio 'ls' (Mac/Linux) o 'Dir' (Windows) - para usuarios windows mirar algunos comandos útiles: https://commandwindows.com/command3.htm
+8. Convertir archivo .CSV a .GEOJSON 'csv2geojson resultado.csv > resultado.geojson' utilizando terminal/command prompt (en su defecto utilizar el servicio en línea http://www.convertcsv.com/csv-to-geojson.htm)
+9. Copiar el contenido del nuevo archivo creado en la variable 'geojsonFeature' en el archivo 'map.html'.
+10. Abrir el archivo 'map.html' en el explorador (Chrome, Firefox).
+11. Visualizar los datos en formato .CSV utilizando http://app.rawgraphs.io/ (Box Plot).
+12. Descargar la visualización como imagen .PNG.
+13. Insertar la dirección de la imagen en 'map.html' en la línea '<img src="img/boxes.png">'
+14. Escribir análisis en el archivo 'map.html'. Solo dos párrafos modificando los tags '<p>' en el archivo 'map.html'.
+15. Cambiar el nombre a la carpeta que contiene los archivos por tu nombre, comprimirla y enviarla una vez finalizado el ejercicio y al correo cristian.hernandez@commonactionforum.net .
 
+### Información para el análisis
 
-## Escala Lux
+#### Escala Lux
 |Illuminance (lux)|Surfaces illuminated by|
 |:------------- |:-------------|
 |0.0001|Moonless, overcast night sky (starlight)|
@@ -25,5 +40,3 @@ npm install -g csv2geojson ::: https://github.com/mapbox/csv2geojson
 |32,000–100,000|Direct sunlight|
 
 *fuente: [wikipedia](https://en.wikipedia.org/wiki/Lux)*
-
-<script src="https://embed.github.com/view/geojson/benbalter/dc-wifi-social/master/bars.geojson"></script>
